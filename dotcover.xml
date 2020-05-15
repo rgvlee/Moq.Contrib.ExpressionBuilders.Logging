@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="719" TotalStatements="733" CoveragePercent="98" ReportType="DetailedXml" DotCoverVersion="2020.1.2">
+  <FileIndices>
+    <File Index="1" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\Log.cs" ChecksumAlgorithm="SHA256" Checksum="7638B48A40AB9B43554E6BFB58D0DACA17F041239ECE8D55A26D8D2A18205395" />
+    <File Index="2" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\SetupExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="95E434DF33174C6C83DF0864AC362FA0990ADD6F90AC0EED3E809530773BB4CF" />
+    <File Index="3" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\VerifyExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="09800E373D138B0DE4DA38631F42D0C7514D3A53B56CDC283015C7F0ABB51947" />
+    <File Index="4" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\LogMethod\ExpressionBuilder.cs" ChecksumAlgorithm="SHA256" Checksum="1A5E45DDAC6126AFE675850F840AE5CD1F83B08284684A4906263EC81D9C30EF" />
+    <File Index="5" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\LogMethod\MatchingOptions.cs" ChecksumAlgorithm="SHA256" Checksum="C7E2D02BA58655F5293BF2C318E52C1BFAC873B52248B9D1A7446DF86ED6D9BD" />
+    <File Index="6" Name="C:\Users\rgvlee\AppData\Local\Temp\.NETStandard,Version=v2.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="A6E03AE4DF13FE05345E9022D1F1CD24ECAE4BFD66DB4843697C855D9F9335F4" />
+    <File Index="7" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\LogMethod\IExpressionBuilder.cs" ChecksumAlgorithm="SHA256" Checksum="A5815C8D261B373B806DC4482738ED9ACD33E76B496DAE95A57301D0B2FC56EA" />
+    <File Index="8" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\LogMethod\IExpressionBuilderPrimaryOperations.cs" ChecksumAlgorithm="SHA256" Checksum="D2AC7CBB5F5A269FF69453284CE430767310C112CCD4FE48C52A1EE4423E1921" />
+    <File Index="9" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\LogMethod\IExpressionBuilderSecondaryOperations.cs" ChecksumAlgorithm="SHA256" Checksum="283215D601ADCE4625CBD27A720B3453C84E15B6DAC99BE139A4B63642B5498C" />
+    <File Index="10" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\obj\Debug\netstandard2.0\Moq.Contrib.ExpressionBuilders.Logging.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="E3A8C19D7759DE5AAFFB1D659ED88B214D02D9714AD867E340AE1F7CBB84A0D8" />
+    <File Index="11" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.Extensions.Verify\VerifyExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="715835390FDC7B6AD5850160621D54F835849C0AE4EE010242A6B2065A41A6BE" />
+    <File Index="12" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.Extensions.Verify\obj\Debug\netstandard2.0\Moq.Contrib.Extensions.Verify.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="002E9FAA1052137C26A53ED9F5E9F5C367F685B171EF4B996033EB273C4775D5" />
+    <File Index="13" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Testing.Common\Foo.cs" ChecksumAlgorithm="SHA256" Checksum="4B8414A19D15E35770DAF6035E4A710338E612C211AFCBCFFF91DD5A9429B202" />
+    <File Index="14" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Testing.Common\IBar.cs" ChecksumAlgorithm="SHA256" Checksum="DEFFEBB3442F8F003426D8068B917ADBDAF615B7C458C9585D52BA7D7AEA00BF" />
+    <File Index="15" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Testing.Common\IFoo.cs" ChecksumAlgorithm="SHA256" Checksum="EE3A73A0B91F03026A78CD285FA2328745B681C15731219CBCA7B85FEA3BE74B" />
+    <File Index="16" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Testing.Common\obj\Debug\netstandard2.0\Testing.Common.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="276F5BC9A4C002FA4BC718AF9EA61863D32A8404E68E67B9C5074D375DCAD64F" />
+    <File Index="17" Name="C:\Users\rgvlee\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="18" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.Extensions.Verify.Tests\VerifyTests.cs" ChecksumAlgorithm="SHA256" Checksum="4285101B0ACBD1283C5F9C20D74A72E72CAB053F76356E28636970FCD1D03599" />
+    <File Index="19" Name="C:\Users\rgvlee\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="609721B0977B4BB4296F30DB82935147EB4A1C0DD665D90D1CA0787FF0F86F1D" />
+    <File Index="20" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.Extensions.Verify.Tests\obj\Debug\netcoreapp3.1\Moq.Contrib.Extensions.Verify.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="2CEB53428775C0F07163304E75AD0297DB07F9471772BB860D58951507CCEA86" />
+    <File Index="21" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging.Tests\ReadmeExamples.cs" ChecksumAlgorithm="SHA256" Checksum="354A284A49A7CFB7765F3F0295F5F052D06422D4698244284A295D2A73D7A194" />
+    <File Index="22" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging.Tests\SetupLogTests.cs" ChecksumAlgorithm="SHA256" Checksum="A810C4F4FFFF485FA82D8BCEF5A43166D33834498C92F18A02EBF9A6FB7E6D1A" />
+    <File Index="23" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging.Tests\TestException.cs" ChecksumAlgorithm="SHA256" Checksum="DA35E573A1625E81BF77BAD6E87D9D338F6B5B5C789089C62DE7F93B5C3FBD58" />
+    <File Index="24" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging.Tests\VerifyLogTests.cs" ChecksumAlgorithm="SHA256" Checksum="E5AD955602A06E3E27F5A2A49CFA568A29C4FA295635AF5391A6E25A2104A120" />
+    <File Index="25" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging.Tests\obj\Debug\netcoreapp3.1\Moq.Contrib.ExpressionBuilders.Logging.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="1D6CEA1EDD1686A32CDE381240B6349E5C581AD3C04CBD54E7BA21439365B7DF" />
+    <File Index="26" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Moq.Contrib.ExpressionBuilders.Logging\LogMethod\ExpressionBuilder.cs" ChecksumAlgorithm="SHA256" Checksum="3AAD1BE679D89608E7DBF0F924EBC1D91B62AFE08A8B78E2372A9DD72622EF13" />
+    <File Index="27" Name="C:\Users\rgvlee\.nuget\packages\microsoft.net.test.sdk\16.6.1\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="28" Name="Z:\Git\Moq.Contrib.ExpressionBuilders.Logging\src\Testing.Common\obj\Debug\netstandard2.0\Testing.Common.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="55ABB0F82DFB1919B8FA9D847389D4A1C08E0B9AB462C73E1C5650B464E99343" />
+  </FileIndices>
+  <Assembly Name="Moq.Contrib.Extensions.Verify" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+    <Namespace Name="Moq.Contrib.Extensions.Verify" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+      <Type Name="VerifyExtensions" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Method Name="Verify&lt;T,TResult&gt;(T,System.Linq.Expressions.Expression&lt;System.Func&lt;T,TResult&gt;&gt;,Moq.Times):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="11" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="25" Column="13" EndLine="25" EndColumn="56" Covered="True" />
+          <Statement FileIndex="11" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify&lt;T,TResult&gt;(T,System.Linq.Expressions.Expression&lt;System.Func&lt;T,TResult&gt;&gt;,System.Func&lt;Moq.Times&gt;):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="11" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="20" Column="13" EndLine="20" EndColumn="48" Covered="True" />
+          <Statement FileIndex="11" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify&lt;T&gt;(T,System.Linq.Expressions.Expression&lt;System.Action&lt;T&gt;&gt;,Moq.Times):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="11" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="15" Column="13" EndLine="15" EndColumn="56" Covered="True" />
+          <Statement FileIndex="11" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify&lt;T&gt;(T,System.Linq.Expressions.Expression&lt;System.Action&lt;T&gt;&gt;,System.Func&lt;Moq.Times&gt;):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="11" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="10" Column="13" EndLine="10" EndColumn="48" Covered="True" />
+          <Statement FileIndex="11" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Moq.Contrib.Extensions.Verify.Tests" CoveredStatements="64" TotalStatements="66" CoveragePercent="97">
+    <Namespace Name="Moq.Contrib.Extensions.Verify.Tests" CoveredStatements="64" TotalStatements="66" CoveragePercent="97">
+      <Type Name="VerifyTests" CoveredStatements="64" TotalStatements="66" CoveragePercent="97">
+        <Type Name="&lt;&gt;c" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass0_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass1_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass2_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_ForMethodWithReturnValueWithExpressionThatDoesNotMatchActualInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="18" Line="56" Column="13" EndLine="56" EndColumn="14" Covered="True" />
+            <Statement FileIndex="18" Line="57" Column="17" EndLine="57" EndColumn="88" Covered="True" />
+            <Statement FileIndex="18" Line="58" Column="13" EndLine="58" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass5_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_ForVoidMethodWithExpressionThatDoesNotMatchActualInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="18" Line="100" Column="13" EndLine="100" EndColumn="14" Covered="True" />
+            <Statement FileIndex="18" Line="101" Column="17" EndLine="101" EndColumn="89" Covered="True" />
+            <Statement FileIndex="18" Line="102" Column="13" EndLine="102" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Method Name="Verify_ForMethodWithReturnValueWithExpressionMatchingActualInvocation_DoesNotThrow(System.Int32):System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="18" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="18" Line="16" Column="13" EndLine="16" EndColumn="39" Covered="True" />
+          <Statement FileIndex="18" Line="17" Column="13" EndLine="17" EndColumn="36" Covered="True" />
+          <Statement FileIndex="18" Line="19" Column="13" EndLine="19" EndColumn="35" Covered="True" />
+          <Statement FileIndex="18" Line="21" Column="13" EndLine="21" EndColumn="65" Covered="True" />
+          <Statement FileIndex="18" Line="22" Column="13" EndLine="22" EndColumn="75" Covered="True" />
+          <Statement FileIndex="18" Line="23" Column="13" EndLine="23" EndColumn="92" Covered="True" />
+          <Statement FileIndex="18" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ForMethodWithReturnValueWithExpressionMatchingActualInvocations_DoesNotThrow(System.Int32,System.Int32):System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Statement FileIndex="18" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="18" Line="30" Column="13" EndLine="30" EndColumn="39" Covered="True" />
+          <Statement FileIndex="18" Line="31" Column="13" EndLine="31" EndColumn="36" Covered="True" />
+          <Statement FileIndex="18" Line="33" Column="18" EndLine="33" EndColumn="27" Covered="True" />
+          <Statement FileIndex="18" Line="34" Column="13" EndLine="34" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="35" Column="17" EndLine="35" EndColumn="39" Covered="True" />
+          <Statement FileIndex="18" Line="36" Column="13" EndLine="36" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="33" Column="54" EndLine="33" EndColumn="57" Covered="True" />
+          <Statement FileIndex="18" Line="33" Column="29" EndLine="33" EndColumn="52" Covered="True" />
+          <Statement FileIndex="18" Line="38" Column="13" EndLine="38" EndColumn="89" Covered="True" />
+          <Statement FileIndex="18" Line="39" Column="13" EndLine="39" EndColumn="99" Covered="True" />
+          <Statement FileIndex="18" Line="40" Column="13" EndLine="40" EndColumn="116" Covered="True" />
+          <Statement FileIndex="18" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ForMethodWithReturnValueWithExpressionThatDoesNotMatchActualInvocations_Throws(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="18" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+          <Statement FileIndex="18" Line="47" Column="13" EndLine="47" EndColumn="39" Covered="True" />
+          <Statement FileIndex="18" Line="48" Column="13" EndLine="48" EndColumn="36" Covered="True" />
+          <Statement FileIndex="18" Line="50" Column="18" EndLine="50" EndColumn="27" Covered="True" />
+          <Statement FileIndex="18" Line="51" Column="13" EndLine="51" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="52" Column="17" EndLine="52" EndColumn="35" Covered="True" />
+          <Statement FileIndex="18" Line="53" Column="13" EndLine="53" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="50" Column="54" EndLine="50" EndColumn="57" Covered="True" />
+          <Statement FileIndex="18" Line="50" Column="29" EndLine="50" EndColumn="52" Covered="True" />
+          <Statement FileIndex="18" Line="55" Column="13" EndLine="58" EndColumn="16" Covered="True" />
+          <Statement FileIndex="18" Line="59" Column="9" EndLine="59" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ForVoidMethodWithExpressionMatchingActualInvocation_DoesNotThrow():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="18" Line="63" Column="9" EndLine="63" EndColumn="10" Covered="True" />
+          <Statement FileIndex="18" Line="64" Column="13" EndLine="64" EndColumn="39" Covered="True" />
+          <Statement FileIndex="18" Line="65" Column="13" EndLine="65" EndColumn="36" Covered="True" />
+          <Statement FileIndex="18" Line="67" Column="13" EndLine="67" EndColumn="30" Covered="True" />
+          <Statement FileIndex="18" Line="69" Column="13" EndLine="69" EndColumn="60" Covered="True" />
+          <Statement FileIndex="18" Line="70" Column="9" EndLine="70" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ForVoidMethodWithExpressionMatchingActualInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="18" Line="75" Column="9" EndLine="75" EndColumn="10" Covered="True" />
+          <Statement FileIndex="18" Line="76" Column="13" EndLine="76" EndColumn="39" Covered="True" />
+          <Statement FileIndex="18" Line="77" Column="13" EndLine="77" EndColumn="36" Covered="True" />
+          <Statement FileIndex="18" Line="79" Column="18" EndLine="79" EndColumn="27" Covered="True" />
+          <Statement FileIndex="18" Line="80" Column="13" EndLine="80" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="81" Column="17" EndLine="81" EndColumn="34" Covered="True" />
+          <Statement FileIndex="18" Line="82" Column="13" EndLine="82" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="79" Column="54" EndLine="79" EndColumn="57" Covered="True" />
+          <Statement FileIndex="18" Line="79" Column="29" EndLine="79" EndColumn="52" Covered="True" />
+          <Statement FileIndex="18" Line="84" Column="13" EndLine="84" EndColumn="84" Covered="True" />
+          <Statement FileIndex="18" Line="85" Column="9" EndLine="85" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ForVoidMethodWithExpressionThatDoesNotMatchActualInvocations_Throws(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="18" Line="90" Column="9" EndLine="90" EndColumn="10" Covered="True" />
+          <Statement FileIndex="18" Line="91" Column="13" EndLine="91" EndColumn="39" Covered="True" />
+          <Statement FileIndex="18" Line="92" Column="13" EndLine="92" EndColumn="36" Covered="True" />
+          <Statement FileIndex="18" Line="94" Column="18" EndLine="94" EndColumn="27" Covered="True" />
+          <Statement FileIndex="18" Line="95" Column="13" EndLine="95" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="96" Column="17" EndLine="96" EndColumn="34" Covered="True" />
+          <Statement FileIndex="18" Line="97" Column="13" EndLine="97" EndColumn="14" Covered="True" />
+          <Statement FileIndex="18" Line="94" Column="54" EndLine="94" EndColumn="57" Covered="True" />
+          <Statement FileIndex="18" Line="94" Column="29" EndLine="94" EndColumn="52" Covered="True" />
+          <Statement FileIndex="18" Line="99" Column="13" EndLine="102" EndColumn="16" Covered="True" />
+          <Statement FileIndex="18" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Moq.Contrib.ExpressionBuilders.Logging.Tests" CoveredStatements="524" TotalStatements="535" CoveragePercent="98">
+    <Namespace Name="Moq.Contrib.ExpressionBuilders.Logging.Tests" CoveredStatements="524" TotalStatements="535" CoveragePercent="98">
+      <Type Name="ReadmeExamples&lt;T&gt;" CoveredStatements="121" TotalStatements="122" CoveragePercent="99">
+        <Type Name="&lt;&gt;c" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Method Name="&lt;Example03&gt;b__4_0(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="56" Column="50" EndLine="56" EndColumn="95" Covered="True" />
+          </Method>
+          <Method Name="&lt;Example03&gt;b__4_1(Microsoft.Extensions.Logging.EventId):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="57" Column="39" EndLine="57" EndColumn="64" Covered="True" />
+          </Method>
+          <Method Name="&lt;Example03&gt;b__4_2(System.String):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="58" Column="42" EndLine="58" EndColumn="64" Covered="True" />
+          </Method>
+          <Method Name="&lt;Example08&gt;b__9_0(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="123" Column="53" EndLine="123" EndColumn="72" Covered="True" />
+          </Method>
+          <Method Name="&lt;Example11&gt;b__12_0(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="178" Column="50" EndLine="178" EndColumn="95" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass11_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Example10&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="21" Line="161" Column="13" EndLine="161" EndColumn="14" Covered="True" />
+            <Statement FileIndex="21" Line="162" Column="17" EndLine="162" EndColumn="116" Covered="True" />
+            <Statement FileIndex="21" Line="163" Column="13" EndLine="163" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass7_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Example06&gt;b__0(System.String):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="98" Column="58" EndLine="98" EndColumn="106" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass8_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Example07&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="112" Column="51" EndLine="112" EndColumn="143" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass9_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Example08&gt;b__1():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="21" Line="123" Column="117" EndLine="123" EndColumn="134" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name="Example01():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="21" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="28" Column="13" EndLine="28" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="30" Column="13" EndLine="30" EndColumn="58" Covered="True" />
+          <Statement FileIndex="21" Line="32" Column="13" EndLine="32" EndColumn="130" Covered="True" />
+          <Statement FileIndex="21" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example02(System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="21" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="39" Column="13" EndLine="39" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="41" Column="18" EndLine="41" EndColumn="27" Covered="True" />
+          <Statement FileIndex="21" Line="42" Column="13" EndLine="42" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="43" Column="17" EndLine="43" EndColumn="88" Covered="True" />
+          <Statement FileIndex="21" Line="44" Column="13" EndLine="44" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="41" Column="54" EndLine="41" EndColumn="57" Covered="True" />
+          <Statement FileIndex="21" Line="41" Column="29" EndLine="41" EndColumn="52" Covered="True" />
+          <Statement FileIndex="21" Line="46" Column="13" EndLine="46" EndColumn="98" Covered="True" />
+          <Statement FileIndex="21" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example03():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="21" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="52" Column="13" EndLine="52" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="54" Column="13" EndLine="54" EndColumn="58" Covered="True" />
+          <Statement FileIndex="21" Line="56" Column="13" EndLine="59" EndColumn="29" Covered="True" />
+          <Statement FileIndex="21" Line="60" Column="9" EndLine="60" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example04():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="21" Line="64" Column="9" EndLine="64" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="65" Column="13" EndLine="65" EndColumn="44" Covered="True" />
+          <Statement FileIndex="21" Line="66" Column="13" EndLine="66" EndColumn="44" Covered="True" />
+          <Statement FileIndex="21" Line="68" Column="13" EndLine="68" EndColumn="58" Covered="True" />
+          <Statement FileIndex="21" Line="70" Column="13" EndLine="70" EndColumn="134" Covered="True" />
+          <Statement FileIndex="21" Line="72" Column="13" EndLine="72" EndColumn="130" Covered="True" />
+          <Statement FileIndex="21" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example05():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="21" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="78" Column="13" EndLine="78" EndColumn="62" Covered="True" />
+          <Statement FileIndex="21" Line="79" Column="13" EndLine="79" EndColumn="61" Covered="True" />
+          <Statement FileIndex="21" Line="80" Column="13" EndLine="80" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="82" Column="13" EndLine="82" EndColumn="69" Covered="True" />
+          <Statement FileIndex="21" Line="84" Column="13" EndLine="84" EndColumn="84" Covered="True" />
+          <Statement FileIndex="21" Line="85" Column="9" EndLine="85" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example06():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="21" Line="89" Column="9" EndLine="89" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="90" Column="13" EndLine="90" EndColumn="65" Covered="True" />
+          <Statement FileIndex="21" Line="91" Column="13" EndLine="91" EndColumn="62" Covered="True" />
+          <Statement FileIndex="21" Line="92" Column="13" EndLine="92" EndColumn="67" Covered="True" />
+          <Statement FileIndex="21" Line="93" Column="13" EndLine="93" EndColumn="61" Covered="True" />
+          <Statement FileIndex="21" Line="94" Column="13" EndLine="94" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="96" Column="13" EndLine="96" EndColumn="69" Covered="True" />
+          <Statement FileIndex="21" Line="98" Column="13" EndLine="98" EndColumn="121" Covered="True" />
+          <Statement FileIndex="21" Line="99" Column="9" EndLine="99" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example07():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="21" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="104" Column="13" EndLine="104" EndColumn="67" Covered="True" />
+          <Statement FileIndex="21" Line="105" Column="13" EndLine="105" EndColumn="71" Covered="True" />
+          <Statement FileIndex="21" Line="106" Column="13" EndLine="106" EndColumn="62" Covered="True" />
+          <Statement FileIndex="21" Line="107" Column="13" EndLine="107" EndColumn="77" Covered="True" />
+          <Statement FileIndex="21" Line="108" Column="13" EndLine="108" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="110" Column="13" EndLine="110" EndColumn="69" Covered="True" />
+          <Statement FileIndex="21" Line="112" Column="13" EndLine="112" EndColumn="158" Covered="True" />
+          <Statement FileIndex="21" Line="113" Column="9" EndLine="113" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example08(System.Int32):System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="21" Line="118" Column="9" EndLine="118" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="119" Column="13" EndLine="119" EndColumn="53" Covered="True" />
+          <Statement FileIndex="21" Line="120" Column="13" EndLine="120" EndColumn="37" Covered="True" />
+          <Statement FileIndex="21" Line="122" Column="13" EndLine="122" EndColumn="56" Covered="True" />
+          <Statement FileIndex="21" Line="123" Column="13" EndLine="123" EndColumn="149" Covered="True" />
+          <Statement FileIndex="21" Line="124" Column="13" EndLine="124" EndColumn="44" Covered="True" />
+          <Statement FileIndex="21" Line="126" Column="18" EndLine="126" EndColumn="27" Covered="True" />
+          <Statement FileIndex="21" Line="127" Column="13" EndLine="127" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="128" Column="17" EndLine="128" EndColumn="45" Covered="True" />
+          <Statement FileIndex="21" Line="129" Column="13" EndLine="129" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="126" Column="54" EndLine="126" EndColumn="57" Covered="True" />
+          <Statement FileIndex="21" Line="126" Column="29" EndLine="126" EndColumn="52" Covered="True" />
+          <Statement FileIndex="21" Line="131" Column="13" EndLine="131" EndColumn="37" Covered="True" />
+          <Statement FileIndex="21" Line="132" Column="13" EndLine="132" EndColumn="75" Covered="True" />
+          <Statement FileIndex="21" Line="133" Column="9" EndLine="133" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example09(System.Int32):System.Void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+          <Statement FileIndex="21" Line="138" Column="9" EndLine="138" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="139" Column="13" EndLine="139" EndColumn="44" Covered="True" />
+          <Statement FileIndex="21" Line="140" Column="13" EndLine="140" EndColumn="121" Covered="True" />
+          <Statement FileIndex="21" Line="141" Column="13" EndLine="141" EndColumn="44" Covered="True" />
+          <Statement FileIndex="21" Line="143" Column="18" EndLine="143" EndColumn="27" Covered="True" />
+          <Statement FileIndex="21" Line="144" Column="13" EndLine="144" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="145" Column="17" EndLine="145" EndColumn="62" Covered="True" />
+          <Statement FileIndex="21" Line="146" Column="13" EndLine="146" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="143" Column="54" EndLine="143" EndColumn="57" Covered="True" />
+          <Statement FileIndex="21" Line="143" Column="29" EndLine="143" EndColumn="52" Covered="True" />
+          <Statement FileIndex="21" Line="148" Column="13" EndLine="148" EndColumn="40" Covered="True" />
+          <Statement FileIndex="21" Line="149" Column="9" EndLine="149" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example10(System.Int32):System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="21" Line="154" Column="9" EndLine="154" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="155" Column="13" EndLine="155" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="157" Column="13" EndLine="157" EndColumn="53" Covered="True" />
+          <Statement FileIndex="21" Line="158" Column="13" EndLine="158" EndColumn="48" Covered="True" />
+          <Statement FileIndex="21" Line="160" Column="13" EndLine="163" EndColumn="16" Covered="True" />
+          <Statement FileIndex="21" Line="165" Column="13" EndLine="165" EndColumn="80" Covered="True" />
+          <Statement FileIndex="21" Line="166" Column="13" EndLine="166" EndColumn="83" Covered="True" />
+          <Statement FileIndex="21" Line="167" Column="9" EndLine="167" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example11(System.Int32):System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="21" Line="172" Column="9" EndLine="172" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="173" Column="13" EndLine="173" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="175" Column="13" EndLine="175" EndColumn="53" Covered="True" />
+          <Statement FileIndex="21" Line="176" Column="13" EndLine="176" EndColumn="48" Covered="True" />
+          <Statement FileIndex="21" Line="178" Column="13" EndLine="178" EndColumn="116" Covered="True" />
+          <Statement FileIndex="21" Line="179" Column="9" EndLine="179" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Example12(System.Int32):System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="21" Line="184" Column="9" EndLine="184" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="185" Column="13" EndLine="185" EndColumn="31" Covered="True" />
+          <Statement FileIndex="21" Line="186" Column="13" EndLine="186" EndColumn="31" Covered="True" />
+          <Statement FileIndex="21" Line="187" Column="13" EndLine="187" EndColumn="35" Covered="True" />
+          <Statement FileIndex="21" Line="188" Column="13" EndLine="188" EndColumn="35" Covered="True" />
+          <Statement FileIndex="21" Line="189" Column="13" EndLine="189" EndColumn="116" Covered="True" />
+          <Statement FileIndex="21" Line="191" Column="13" EndLine="191" EndColumn="39" Covered="True" />
+          <Statement FileIndex="21" Line="193" Column="18" EndLine="193" EndColumn="27" Covered="True" />
+          <Statement FileIndex="21" Line="194" Column="13" EndLine="194" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="195" Column="17" EndLine="195" EndColumn="61" Covered="True" />
+          <Statement FileIndex="21" Line="196" Column="13" EndLine="196" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="193" Column="54" EndLine="193" EndColumn="57" Covered="True" />
+          <Statement FileIndex="21" Line="193" Column="29" EndLine="193" EndColumn="52" Covered="True" />
+          <Statement FileIndex="21" Line="198" Column="13" EndLine="198" EndColumn="129" Covered="True" />
+          <Statement FileIndex="21" Line="199" Column="9" EndLine="199" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetUp():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="21" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="20" Column="13" EndLine="20" EndColumn="38" Covered="True" />
+          <Statement FileIndex="21" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="SetupLogTests&lt;T&gt;" CoveredStatements="79" TotalStatements="83" CoveragePercent="95">
+        <Type Name="&lt;&gt;c" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Method Name="&lt;SetupThenVerify_InvocationThatDoesNotMatchSetUp_Throws&gt;b__2_0(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="22" Line="54" Column="47" EndLine="54" EndColumn="69" Covered="True" />
+          </Method>
+          <Method Name="&lt;SetupThenVerifyAll_InvocationThatDoesNotMatchSetUp_Throws&gt;b__4_0(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="22" Line="105" Column="59" EndLine="105" EndColumn="81" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass1_0" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Method Name="&lt;SetupThenVerify_InvocationMatchesSetUp_VerifyDoesNotThrow&gt;b__0(System.String):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="22" Line="30" Column="78" EndLine="30" EndColumn="119" Covered="True" />
+          </Method>
+          <Method Name="&lt;SetupThenVerify_InvocationMatchesSetUp_VerifyDoesNotThrow&gt;b__1():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="22" Line="31" Column="33" EndLine="31" EndColumn="50" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass2_0" CoveredStatements="2" TotalStatements="4" CoveragePercent="50">
+          <Method Name="&lt;SetupThenVerify_InvocationThatDoesNotMatchSetUp_Throws&gt;b__1():System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+            <Statement FileIndex="22" Line="55" Column="33" EndLine="55" EndColumn="50" Covered="False" />
+          </Method>
+          <Method Name="&lt;SetupThenVerify_InvocationThatDoesNotMatchSetUp_Throws&gt;b__2():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="22" Line="64" Column="13" EndLine="64" EndColumn="14" Covered="True" />
+            <Statement FileIndex="22" Line="65" Column="17" EndLine="65" EndColumn="47" Covered="True" />
+            <Statement FileIndex="22" Line="66" Column="13" EndLine="66" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Method Name="&lt;SetupThenVerifyAll_InvocationMatchesSetUp_VerifyDoesNotThrow&gt;b__0(System.String):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="22" Line="83" Column="78" EndLine="83" EndColumn="119" Covered="True" />
+          </Method>
+          <Method Name="&lt;SetupThenVerifyAll_InvocationMatchesSetUp_VerifyDoesNotThrow&gt;b__1():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="22" Line="84" Column="33" EndLine="84" EndColumn="50" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass4_0" CoveredStatements="2" TotalStatements="4" CoveragePercent="50">
+          <Method Name="&lt;SetupThenVerifyAll_InvocationThatDoesNotMatchSetUp_Throws&gt;b__1():System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+            <Statement FileIndex="22" Line="105" Column="156" EndLine="105" EndColumn="173" Covered="False" />
+          </Method>
+          <Method Name="&lt;SetupThenVerifyAll_InvocationThatDoesNotMatchSetUp_Throws&gt;b__2():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="22" Line="113" Column="13" EndLine="113" EndColumn="14" Covered="True" />
+            <Statement FileIndex="22" Line="114" Column="17" EndLine="114" EndColumn="50" Covered="True" />
+            <Statement FileIndex="22" Line="115" Column="13" EndLine="115" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Method Name="CreateMockedLogger():T" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="22" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="22" Line="16" Column="13" EndLine="16" EndColumn="33" Covered="True" />
+          <Statement FileIndex="22" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetupThenVerify_InvocationMatchesSetUp_VerifyDoesNotThrow(System.Int32):System.Void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <Statement FileIndex="22" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
+          <Statement FileIndex="22" Line="23" Column="13" EndLine="23" EndColumn="31" Covered="True" />
+          <Statement FileIndex="22" Line="24" Column="13" EndLine="24" EndColumn="35" Covered="True" />
+          <Statement FileIndex="22" Line="25" Column="13" EndLine="25" EndColumn="85" Covered="True" />
+          <Statement FileIndex="22" Line="27" Column="13" EndLine="27" EndColumn="47" Covered="True" />
+          <Statement FileIndex="22" Line="28" Column="13" EndLine="28" EndColumn="37" Covered="True" />
+          <Statement FileIndex="22" Line="29" Column="13" EndLine="32" EndColumn="31" Covered="True" />
+          <Statement FileIndex="22" Line="34" Column="18" EndLine="34" EndColumn="27" Covered="True" />
+          <Statement FileIndex="22" Line="35" Column="13" EndLine="35" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="36" Column="17" EndLine="36" EndColumn="53" Covered="True" />
+          <Statement FileIndex="22" Line="37" Column="13" EndLine="37" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="34" Column="54" EndLine="34" EndColumn="57" Covered="True" />
+          <Statement FileIndex="22" Line="34" Column="29" EndLine="34" EndColumn="52" Covered="True" />
+          <Statement FileIndex="22" Line="39" Column="13" EndLine="39" EndColumn="43" Covered="True" />
+          <Statement FileIndex="22" Line="40" Column="13" EndLine="40" EndColumn="75" Covered="True" />
+          <Statement FileIndex="22" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetupThenVerify_InvocationThatDoesNotMatchSetUp_Throws(System.Int32):System.Void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
+          <Statement FileIndex="22" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+          <Statement FileIndex="22" Line="47" Column="13" EndLine="47" EndColumn="31" Covered="True" />
+          <Statement FileIndex="22" Line="48" Column="13" EndLine="48" EndColumn="35" Covered="True" />
+          <Statement FileIndex="22" Line="49" Column="13" EndLine="49" EndColumn="85" Covered="True" />
+          <Statement FileIndex="22" Line="51" Column="13" EndLine="51" EndColumn="47" Covered="True" />
+          <Statement FileIndex="22" Line="52" Column="13" EndLine="52" EndColumn="37" Covered="True" />
+          <Statement FileIndex="22" Line="53" Column="13" EndLine="56" EndColumn="31" Covered="True" />
+          <Statement FileIndex="22" Line="58" Column="18" EndLine="58" EndColumn="27" Covered="True" />
+          <Statement FileIndex="22" Line="59" Column="13" EndLine="59" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="60" Column="17" EndLine="60" EndColumn="53" Covered="True" />
+          <Statement FileIndex="22" Line="61" Column="13" EndLine="61" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="58" Column="54" EndLine="58" EndColumn="57" Covered="True" />
+          <Statement FileIndex="22" Line="58" Column="29" EndLine="58" EndColumn="52" Covered="True" />
+          <Statement FileIndex="22" Line="63" Column="13" EndLine="66" EndColumn="16" Covered="True" />
+          <Statement FileIndex="22" Line="68" Column="13" EndLine="68" EndColumn="57" Covered="True" />
+          <Statement FileIndex="22" Line="69" Column="13" EndLine="69" EndColumn="79" Covered="True" />
+          <Statement FileIndex="22" Line="70" Column="9" EndLine="70" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetupThenVerifyAll_InvocationMatchesSetUp_VerifyDoesNotThrow(System.Int32):System.Void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <Statement FileIndex="22" Line="75" Column="9" EndLine="75" EndColumn="10" Covered="True" />
+          <Statement FileIndex="22" Line="76" Column="13" EndLine="76" EndColumn="31" Covered="True" />
+          <Statement FileIndex="22" Line="77" Column="13" EndLine="77" EndColumn="35" Covered="True" />
+          <Statement FileIndex="22" Line="78" Column="13" EndLine="78" EndColumn="85" Covered="True" />
+          <Statement FileIndex="22" Line="80" Column="13" EndLine="80" EndColumn="47" Covered="True" />
+          <Statement FileIndex="22" Line="81" Column="13" EndLine="81" EndColumn="37" Covered="True" />
+          <Statement FileIndex="22" Line="82" Column="13" EndLine="84" EndColumn="52" Covered="True" />
+          <Statement FileIndex="22" Line="86" Column="18" EndLine="86" EndColumn="27" Covered="True" />
+          <Statement FileIndex="22" Line="87" Column="13" EndLine="87" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="88" Column="17" EndLine="88" EndColumn="53" Covered="True" />
+          <Statement FileIndex="22" Line="89" Column="13" EndLine="89" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="86" Column="54" EndLine="86" EndColumn="57" Covered="True" />
+          <Statement FileIndex="22" Line="86" Column="29" EndLine="86" EndColumn="52" Covered="True" />
+          <Statement FileIndex="22" Line="91" Column="13" EndLine="91" EndColumn="46" Covered="True" />
+          <Statement FileIndex="22" Line="92" Column="13" EndLine="92" EndColumn="75" Covered="True" />
+          <Statement FileIndex="22" Line="93" Column="9" EndLine="93" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetupThenVerifyAll_InvocationThatDoesNotMatchSetUp_Throws(System.Int32):System.Void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
+          <Statement FileIndex="22" Line="98" Column="9" EndLine="98" EndColumn="10" Covered="True" />
+          <Statement FileIndex="22" Line="99" Column="13" EndLine="99" EndColumn="31" Covered="True" />
+          <Statement FileIndex="22" Line="100" Column="13" EndLine="100" EndColumn="35" Covered="True" />
+          <Statement FileIndex="22" Line="101" Column="13" EndLine="101" EndColumn="85" Covered="True" />
+          <Statement FileIndex="22" Line="103" Column="13" EndLine="103" EndColumn="47" Covered="True" />
+          <Statement FileIndex="22" Line="104" Column="13" EndLine="104" EndColumn="37" Covered="True" />
+          <Statement FileIndex="22" Line="105" Column="13" EndLine="105" EndColumn="175" Covered="True" />
+          <Statement FileIndex="22" Line="107" Column="18" EndLine="107" EndColumn="27" Covered="True" />
+          <Statement FileIndex="22" Line="108" Column="13" EndLine="108" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="109" Column="17" EndLine="109" EndColumn="53" Covered="True" />
+          <Statement FileIndex="22" Line="110" Column="13" EndLine="110" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="107" Column="54" EndLine="107" EndColumn="57" Covered="True" />
+          <Statement FileIndex="22" Line="107" Column="29" EndLine="107" EndColumn="52" Covered="True" />
+          <Statement FileIndex="22" Line="112" Column="13" EndLine="115" EndColumn="16" Covered="True" />
+          <Statement FileIndex="22" Line="117" Column="13" EndLine="117" EndColumn="57" Covered="True" />
+          <Statement FileIndex="22" Line="118" Column="13" EndLine="118" EndColumn="79" Covered="True" />
+          <Statement FileIndex="22" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="TestException" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+        <Method Name=".ctor(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="23" Line="9" Column="35" EndLine="9" EndColumn="49" Covered="True" />
+          <Statement FileIndex="23" Line="7" Column="48" EndLine="7" EndColumn="61" Covered="True" />
+          <Statement FileIndex="23" Line="7" Column="62" EndLine="7" EndColumn="63" Covered="True" />
+          <Statement FileIndex="23" Line="7" Column="64" EndLine="7" EndColumn="65" Covered="True" />
+        </Method>
+        <Method Name="get_Id():System.Guid" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="23" Line="9" Column="26" EndLine="9" EndColumn="30" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="VerifyLogTests&lt;T&gt;" CoveredStatements="319" TotalStatements="325" CoveragePercent="98">
+        <Type Name="&lt;&gt;c" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Method Name="&lt;Verify_ExceptionMessageExpressionThatMatchesInvocations_DoesNotThrow&gt;b__7_1(System.Char):System.Char" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="105" Column="72" EndLine="105" EndColumn="73" Covered="True" />
+          </Method>
+          <Method Name="&lt;Verify_ExceptionMessageExpressionThatMatchesInvocations_DoesNotThrow&gt;b__7_2(System.Char):System.Char" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="105" Column="119" EndLine="105" EndColumn="120" Covered="True" />
+          </Method>
+          <Method Name="&lt;Verify_IntEventIdThatMatchesInvocations_DoesNotThrow&gt;b__12_0(Microsoft.Extensions.Logging.EventId):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="184" Column="49" EndLine="184" EndColumn="72" Covered="True" />
+          </Method>
+          <Method Name="&lt;Verify_LogLevelExpressionThatDoesNotMatchInvocationAndLogMessageExpressionAndLoggedValueThatDoesMatchInvocations_Throws&gt;b__18_1(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="300" Column="54" EndLine="300" EndColumn="76" Covered="True" />
+          </Method>
+          <Method Name="&lt;Verify_LogLevelExpressionThatMatchesInvocations_DoesNotThrow&gt;b__19_0(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="315" Column="50" EndLine="315" EndColumn="92" Covered="True" />
+          </Method>
+          <Method Name="&lt;Verify_LogMessageExpressionThatMatchesInvocations_DoesNotThrow&gt;b__24_1(System.Char):System.Char" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="386" Column="66" EndLine="386" EndColumn="67" Covered="True" />
+          </Method>
+          <Method Name="&lt;Verify_LogMessageExpressionThatMatchesInvocations_DoesNotThrow&gt;b__24_2(System.Char):System.Char" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="386" Column="106" EndLine="386" EndColumn="107" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass11_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_IntEventIdThatDoesNotMatchInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="24" Line="166" Column="13" EndLine="166" EndColumn="14" Covered="True" />
+            <Statement FileIndex="24" Line="167" Column="17" EndLine="167" EndColumn="109" Covered="True" />
+            <Statement FileIndex="24" Line="168" Column="13" EndLine="168" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass13_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Verify_LoggedValueExpressionThatMatchesInvocations_DoesNotThrow&gt;b__0(System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="202" Column="53" EndLine="202" EndColumn="97" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass15_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_LoggedValueThatDoesNotMatchInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="24" Line="241" Column="13" EndLine="241" EndColumn="14" Covered="True" />
+            <Statement FileIndex="24" Line="242" Column="17" EndLine="242" EndColumn="143" Covered="True" />
+            <Statement FileIndex="24" Line="243" Column="13" EndLine="243" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass17_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Verify_LogLevelAndLogMessageExpressionAndLoggedValueThatMatchesInvocations_DoesNotThrow&gt;b__0(System.String):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="279" Column="81" EndLine="279" EndColumn="122" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass18_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_LogLevelExpressionThatDoesNotMatchInvocationAndLogMessageExpressionAndLoggedValueThatDoesMatchInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="24" Line="299" Column="13" EndLine="299" EndColumn="14" Covered="True" />
+            <Statement FileIndex="24" Line="300" Column="17" EndLine="300" EndColumn="172" Covered="True" />
+            <Statement FileIndex="24" Line="301" Column="13" EndLine="301" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass20_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_LogLevelThatDoesNotMatchInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="24" Line="330" Column="13" EndLine="330" EndColumn="14" Covered="True" />
+            <Statement FileIndex="24" Line="331" Column="17" EndLine="331" EndColumn="102" Covered="True" />
+            <Statement FileIndex="24" Line="332" Column="13" EndLine="332" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass24_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Verify_LogMessageExpressionThatMatchesInvocations_DoesNotThrow&gt;b__0(System.String):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="386" Column="52" EndLine="386" EndColumn="109" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass25_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_LogMessageThatDoesNotMatchInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="24" Line="401" Column="13" EndLine="401" EndColumn="14" Covered="True" />
+            <Statement FileIndex="24" Line="402" Column="17" EndLine="402" EndColumn="115" Covered="True" />
+            <Statement FileIndex="24" Line="403" Column="13" EndLine="403" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass27_0" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Method Name="&lt;Verify_TestExceptionExpressionThatMatchesInvocations_DoesNotThrow&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="433" Column="51" EndLine="433" EndColumn="94" Covered="True" />
+          </Method>
+          <Method Name="&lt;Verify_TestExceptionExpressionThatMatchesInvocations_DoesNotThrow&gt;b__1(Moq.Contrib.ExpressionBuilders.Logging.Tests.TestException):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="434" Column="66" EndLine="434" EndColumn="91" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Verify_EventIdExpressionThatMatchesInvocations_DoesNotThrow&gt;b__0(Microsoft.Extensions.Logging.EventId):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="41" Column="49" EndLine="41" EndColumn="89" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass4_0" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+          <Method Name="&lt;Verify_EventIdThatDoesNotMatchInvocations_Throws&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="3" CoveragePercent="67">
+            <Statement FileIndex="24" Line="56" Column="13" EndLine="56" EndColumn="14" Covered="True" />
+            <Statement FileIndex="24" Line="57" Column="17" EndLine="57" EndColumn="113" Covered="True" />
+            <Statement FileIndex="24" Line="58" Column="13" EndLine="58" EndColumn="14" Covered="False" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass6_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Verify_ExceptionExpressionThatMatchesInvocations_DoesNotThrow&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="89" Column="51" EndLine="89" EndColumn="106" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass7_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Verify_ExceptionMessageExpressionThatMatchesInvocations_DoesNotThrow&gt;b__0(System.String):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="24" Line="105" Column="58" EndLine="105" EndColumn="122" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name="CreateMockedLogger():T" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="24" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="27" Column="13" EndLine="27" EndColumn="33" Covered="True" />
+          <Statement FileIndex="24" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetUp():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="24" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="20" Column="13" EndLine="20" EndColumn="38" Covered="True" />
+          <Statement FileIndex="24" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_EventIdExpressionThatMatchesInvocations_DoesNotThrow(System.Int32,Microsoft.Extensions.Logging.EventId):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="34" Column="13" EndLine="34" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="36" Column="18" EndLine="36" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="37" Column="13" EndLine="37" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="38" Column="17" EndLine="38" EndColumn="69" Covered="True" />
+          <Statement FileIndex="24" Line="39" Column="13" EndLine="39" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="36" Column="54" EndLine="36" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="36" Column="29" EndLine="36" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="41" Column="13" EndLine="41" EndColumn="128" Covered="True" />
+          <Statement FileIndex="24" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_EventIdThatDoesNotMatchInvocations_Throws(System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="48" Column="13" EndLine="48" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="50" Column="18" EndLine="50" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="51" Column="13" EndLine="51" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="52" Column="17" EndLine="52" EndColumn="88" Covered="True" />
+          <Statement FileIndex="24" Line="53" Column="13" EndLine="53" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="50" Column="54" EndLine="50" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="50" Column="29" EndLine="50" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="55" Column="13" EndLine="58" EndColumn="16" Covered="True" />
+          <Statement FileIndex="24" Line="59" Column="9" EndLine="59" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_EventIdThatMatchesInvocations_DoesNotThrow(System.Int32,Microsoft.Extensions.Logging.EventId):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="64" Column="9" EndLine="64" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="65" Column="13" EndLine="65" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="67" Column="18" EndLine="67" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="68" Column="13" EndLine="68" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="69" Column="17" EndLine="69" EndColumn="69" Covered="True" />
+          <Statement FileIndex="24" Line="70" Column="13" EndLine="70" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="67" Column="54" EndLine="67" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="67" Column="29" EndLine="67" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="72" Column="13" EndLine="72" EndColumn="90" Covered="True" />
+          <Statement FileIndex="24" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ExceptionExpressionThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+          <Statement FileIndex="24" Line="78" Column="9" EndLine="78" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="79" Column="13" EndLine="79" EndColumn="75" Covered="True" />
+          <Statement FileIndex="24" Line="80" Column="13" EndLine="80" EndColumn="86" Covered="True" />
+          <Statement FileIndex="24" Line="82" Column="13" EndLine="82" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="84" Column="18" EndLine="84" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="85" Column="13" EndLine="85" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="86" Column="17" EndLine="86" EndColumn="71" Covered="True" />
+          <Statement FileIndex="24" Line="87" Column="13" EndLine="87" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="84" Column="54" EndLine="84" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="84" Column="29" EndLine="84" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="89" Column="13" EndLine="89" EndColumn="145" Covered="True" />
+          <Statement FileIndex="24" Line="90" Column="9" EndLine="90" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ExceptionMessageExpressionThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="24" Line="95" Column="9" EndLine="95" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="96" Column="13" EndLine="96" EndColumn="70" Covered="True" />
+          <Statement FileIndex="24" Line="98" Column="13" EndLine="98" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="100" Column="18" EndLine="100" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="101" Column="13" EndLine="101" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="102" Column="17" EndLine="102" EndColumn="71" Covered="True" />
+          <Statement FileIndex="24" Line="103" Column="13" EndLine="103" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="100" Column="54" EndLine="100" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="100" Column="29" EndLine="100" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="105" Column="13" EndLine="105" EndColumn="161" Covered="True" />
+          <Statement FileIndex="24" Line="106" Column="9" EndLine="106" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ExceptionMessageThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="24" Line="111" Column="9" EndLine="111" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="112" Column="13" EndLine="112" EndColumn="70" Covered="True" />
+          <Statement FileIndex="24" Line="114" Column="13" EndLine="114" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="116" Column="18" EndLine="116" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="117" Column="13" EndLine="117" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="118" Column="17" EndLine="118" EndColumn="71" Covered="True" />
+          <Statement FileIndex="24" Line="119" Column="13" EndLine="119" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="116" Column="54" EndLine="116" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="116" Column="29" EndLine="116" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="121" Column="13" EndLine="121" EndColumn="109" Covered="True" />
+          <Statement FileIndex="24" Line="122" Column="9" EndLine="122" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_ExceptionThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="24" Line="127" Column="9" EndLine="127" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="128" Column="13" EndLine="128" EndColumn="70" Covered="True" />
+          <Statement FileIndex="24" Line="130" Column="13" EndLine="130" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="132" Column="18" EndLine="132" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="133" Column="13" EndLine="133" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="134" Column="17" EndLine="134" EndColumn="71" Covered="True" />
+          <Statement FileIndex="24" Line="135" Column="13" EndLine="135" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="132" Column="54" EndLine="132" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="132" Column="29" EndLine="132" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="137" Column="13" EndLine="137" EndColumn="94" Covered="True" />
+          <Statement FileIndex="24" Line="138" Column="9" EndLine="138" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_IntEventIdExpressionThatMatchesInvocations_DoesNotThrow(System.Int32,System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="143" Column="9" EndLine="143" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="144" Column="13" EndLine="144" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="146" Column="18" EndLine="146" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="147" Column="13" EndLine="147" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="148" Column="17" EndLine="148" EndColumn="69" Covered="True" />
+          <Statement FileIndex="24" Line="149" Column="13" EndLine="149" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="146" Column="54" EndLine="146" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="146" Column="29" EndLine="146" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="151" Column="13" EndLine="151" EndColumn="90" Covered="True" />
+          <Statement FileIndex="24" Line="152" Column="9" EndLine="152" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_IntEventIdThatDoesNotMatchInvocations_Throws(System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="157" Column="9" EndLine="157" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="158" Column="13" EndLine="158" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="160" Column="18" EndLine="160" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="161" Column="13" EndLine="161" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="162" Column="17" EndLine="162" EndColumn="84" Covered="True" />
+          <Statement FileIndex="24" Line="163" Column="13" EndLine="163" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="160" Column="54" EndLine="160" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="160" Column="29" EndLine="160" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="165" Column="13" EndLine="168" EndColumn="16" Covered="True" />
+          <Statement FileIndex="24" Line="169" Column="9" EndLine="169" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_IntEventIdThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="24" Line="174" Column="9" EndLine="174" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="175" Column="13" EndLine="175" EndColumn="29" Covered="True" />
+          <Statement FileIndex="24" Line="177" Column="13" EndLine="177" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="179" Column="18" EndLine="179" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="180" Column="13" EndLine="180" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="181" Column="17" EndLine="181" EndColumn="69" Covered="True" />
+          <Statement FileIndex="24" Line="182" Column="13" EndLine="182" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="179" Column="54" EndLine="179" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="179" Column="29" EndLine="179" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="184" Column="13" EndLine="184" EndColumn="111" Covered="True" />
+          <Statement FileIndex="24" Line="185" Column="9" EndLine="185" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LoggedValueExpressionThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Statement FileIndex="24" Line="190" Column="9" EndLine="190" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="191" Column="13" EndLine="191" EndColumn="31" Covered="True" />
+          <Statement FileIndex="24" Line="192" Column="13" EndLine="192" EndColumn="35" Covered="True" />
+          <Statement FileIndex="24" Line="193" Column="13" EndLine="193" EndColumn="85" Covered="True" />
+          <Statement FileIndex="24" Line="195" Column="13" EndLine="195" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="197" Column="18" EndLine="197" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="198" Column="13" EndLine="198" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="199" Column="17" EndLine="199" EndColumn="53" Covered="True" />
+          <Statement FileIndex="24" Line="200" Column="13" EndLine="200" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="197" Column="54" EndLine="197" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="197" Column="29" EndLine="197" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="202" Column="13" EndLine="202" EndColumn="136" Covered="True" />
+          <Statement FileIndex="24" Line="203" Column="9" EndLine="203" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LoggedValuesThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="24" Line="208" Column="9" EndLine="208" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="209" Column="13" EndLine="209" EndColumn="31" Covered="True" />
+          <Statement FileIndex="24" Line="210" Column="13" EndLine="210" EndColumn="31" Covered="True" />
+          <Statement FileIndex="24" Line="211" Column="13" EndLine="211" EndColumn="35" Covered="True" />
+          <Statement FileIndex="24" Line="212" Column="13" EndLine="212" EndColumn="35" Covered="True" />
+          <Statement FileIndex="24" Line="213" Column="13" EndLine="213" EndColumn="116" Covered="True" />
+          <Statement FileIndex="24" Line="215" Column="13" EndLine="215" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="217" Column="18" EndLine="217" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="218" Column="13" EndLine="218" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="219" Column="17" EndLine="219" EndColumn="61" Covered="True" />
+          <Statement FileIndex="24" Line="220" Column="13" EndLine="220" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="217" Column="54" EndLine="217" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="217" Column="29" EndLine="217" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="222" Column="13" EndLine="222" EndColumn="129" Covered="True" />
+          <Statement FileIndex="24" Line="223" Column="9" EndLine="223" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LoggedValueThatDoesNotMatchInvocations_Throws(System.Int32):System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Statement FileIndex="24" Line="228" Column="9" EndLine="228" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="229" Column="13" EndLine="229" EndColumn="31" Covered="True" />
+          <Statement FileIndex="24" Line="230" Column="13" EndLine="230" EndColumn="35" Covered="True" />
+          <Statement FileIndex="24" Line="231" Column="13" EndLine="231" EndColumn="85" Covered="True" />
+          <Statement FileIndex="24" Line="233" Column="13" EndLine="233" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="235" Column="18" EndLine="235" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="236" Column="13" EndLine="236" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="237" Column="17" EndLine="237" EndColumn="53" Covered="True" />
+          <Statement FileIndex="24" Line="238" Column="13" EndLine="238" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="235" Column="54" EndLine="235" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="235" Column="29" EndLine="235" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="240" Column="13" EndLine="243" EndColumn="16" Covered="True" />
+          <Statement FileIndex="24" Line="244" Column="9" EndLine="244" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LoggedValueThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Statement FileIndex="24" Line="249" Column="9" EndLine="249" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="250" Column="13" EndLine="250" EndColumn="31" Covered="True" />
+          <Statement FileIndex="24" Line="251" Column="13" EndLine="251" EndColumn="35" Covered="True" />
+          <Statement FileIndex="24" Line="252" Column="13" EndLine="252" EndColumn="85" Covered="True" />
+          <Statement FileIndex="24" Line="254" Column="13" EndLine="254" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="256" Column="18" EndLine="256" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="257" Column="13" EndLine="257" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="258" Column="17" EndLine="258" EndColumn="53" Covered="True" />
+          <Statement FileIndex="24" Line="259" Column="13" EndLine="259" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="256" Column="54" EndLine="256" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="256" Column="29" EndLine="256" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="261" Column="13" EndLine="261" EndColumn="99" Covered="True" />
+          <Statement FileIndex="24" Line="262" Column="9" EndLine="262" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogLevelAndLogMessageExpressionAndLoggedValueThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Statement FileIndex="24" Line="267" Column="9" EndLine="267" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="268" Column="13" EndLine="268" EndColumn="31" Covered="True" />
+          <Statement FileIndex="24" Line="269" Column="13" EndLine="269" EndColumn="35" Covered="True" />
+          <Statement FileIndex="24" Line="270" Column="13" EndLine="270" EndColumn="85" Covered="True" />
+          <Statement FileIndex="24" Line="272" Column="13" EndLine="272" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="274" Column="18" EndLine="274" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="275" Column="13" EndLine="275" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="276" Column="17" EndLine="276" EndColumn="53" Covered="True" />
+          <Statement FileIndex="24" Line="277" Column="13" EndLine="277" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="274" Column="54" EndLine="274" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="274" Column="29" EndLine="274" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="279" Column="13" EndLine="280" EndColumn="53" Covered="True" />
+          <Statement FileIndex="24" Line="281" Column="9" EndLine="281" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogLevelExpressionThatDoesNotMatchInvocationAndLogMessageExpressionAndLoggedValueThatDoesMatchInvocations_Throws(System.Int32):System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Statement FileIndex="24" Line="286" Column="9" EndLine="286" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="287" Column="13" EndLine="287" EndColumn="31" Covered="True" />
+          <Statement FileIndex="24" Line="288" Column="13" EndLine="288" EndColumn="35" Covered="True" />
+          <Statement FileIndex="24" Line="289" Column="13" EndLine="289" EndColumn="85" Covered="True" />
+          <Statement FileIndex="24" Line="291" Column="13" EndLine="291" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="293" Column="18" EndLine="293" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="294" Column="13" EndLine="294" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="295" Column="17" EndLine="295" EndColumn="53" Covered="True" />
+          <Statement FileIndex="24" Line="296" Column="13" EndLine="296" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="293" Column="54" EndLine="293" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="293" Column="29" EndLine="293" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="298" Column="13" EndLine="301" EndColumn="16" Covered="True" />
+          <Statement FileIndex="24" Line="302" Column="9" EndLine="302" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogLevelExpressionThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="307" Column="9" EndLine="307" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="308" Column="13" EndLine="308" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="310" Column="18" EndLine="310" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="311" Column="13" EndLine="311" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="312" Column="17" EndLine="312" EndColumn="60" Covered="True" />
+          <Statement FileIndex="24" Line="313" Column="13" EndLine="313" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="310" Column="54" EndLine="310" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="310" Column="29" EndLine="310" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="315" Column="13" EndLine="315" EndColumn="131" Covered="True" />
+          <Statement FileIndex="24" Line="316" Column="9" EndLine="316" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogLevelThatDoesNotMatchInvocations_Throws(System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="321" Column="9" EndLine="321" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="322" Column="13" EndLine="322" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="324" Column="18" EndLine="324" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="325" Column="13" EndLine="325" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="326" Column="17" EndLine="326" EndColumn="60" Covered="True" />
+          <Statement FileIndex="24" Line="327" Column="13" EndLine="327" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="324" Column="54" EndLine="324" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="324" Column="29" EndLine="324" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="329" Column="13" EndLine="332" EndColumn="16" Covered="True" />
+          <Statement FileIndex="24" Line="333" Column="9" EndLine="333" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogLevelThatMatchesInvocation_DoesNotThrow():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="24" Line="337" Column="9" EndLine="337" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="338" Column="13" EndLine="338" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="340" Column="13" EndLine="340" EndColumn="56" Covered="True" />
+          <Statement FileIndex="24" Line="342" Column="13" EndLine="342" EndColumn="74" Covered="True" />
+          <Statement FileIndex="24" Line="343" Column="9" EndLine="343" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogLevelThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="348" Column="9" EndLine="348" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="349" Column="13" EndLine="349" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="351" Column="18" EndLine="351" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="352" Column="13" EndLine="352" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="353" Column="17" EndLine="353" EndColumn="60" Covered="True" />
+          <Statement FileIndex="24" Line="354" Column="13" EndLine="354" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="351" Column="54" EndLine="351" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="351" Column="29" EndLine="351" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="356" Column="13" EndLine="356" EndColumn="98" Covered="True" />
+          <Statement FileIndex="24" Line="357" Column="9" EndLine="357" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogMessageContainingOriginalFormatProperty_DoesNotThrow(System.Int32):System.Void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+          <Statement FileIndex="24" Line="362" Column="9" EndLine="362" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="363" Column="13" EndLine="363" EndColumn="65" Covered="True" />
+          <Statement FileIndex="24" Line="364" Column="13" EndLine="364" EndColumn="98" Covered="True" />
+          <Statement FileIndex="24" Line="365" Column="13" EndLine="365" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="367" Column="18" EndLine="367" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="368" Column="13" EndLine="368" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="369" Column="17" EndLine="369" EndColumn="66" Covered="True" />
+          <Statement FileIndex="24" Line="370" Column="13" EndLine="370" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="367" Column="54" EndLine="367" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="367" Column="29" EndLine="367" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="372" Column="13" EndLine="372" EndColumn="151" Covered="True" />
+          <Statement FileIndex="24" Line="373" Column="9" EndLine="373" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogMessageExpressionThatMatchesInvocations_DoesNotThrow(System.Int32,System.String):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="378" Column="9" EndLine="378" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="379" Column="13" EndLine="379" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="381" Column="18" EndLine="381" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="382" Column="13" EndLine="382" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="383" Column="17" EndLine="383" EndColumn="45" Covered="True" />
+          <Statement FileIndex="24" Line="384" Column="13" EndLine="384" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="381" Column="54" EndLine="381" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="381" Column="29" EndLine="381" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="386" Column="13" EndLine="386" EndColumn="148" Covered="True" />
+          <Statement FileIndex="24" Line="387" Column="9" EndLine="387" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogMessageThatDoesNotMatchInvocations_Throws(System.Int32):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="392" Column="9" EndLine="392" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="393" Column="13" EndLine="393" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="395" Column="18" EndLine="395" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="396" Column="13" EndLine="396" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="397" Column="17" EndLine="397" EndColumn="60" Covered="True" />
+          <Statement FileIndex="24" Line="398" Column="13" EndLine="398" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="395" Column="54" EndLine="395" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="395" Column="29" EndLine="395" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="400" Column="13" EndLine="403" EndColumn="16" Covered="True" />
+          <Statement FileIndex="24" Line="404" Column="9" EndLine="404" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_LogMessageThatMatchesInvocations_DoesNotThrow(System.Int32,System.String):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="24" Line="409" Column="9" EndLine="409" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="410" Column="13" EndLine="410" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="412" Column="18" EndLine="412" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="413" Column="13" EndLine="413" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="414" Column="17" EndLine="414" EndColumn="45" Covered="True" />
+          <Statement FileIndex="24" Line="415" Column="13" EndLine="415" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="412" Column="54" EndLine="412" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="412" Column="29" EndLine="412" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="417" Column="13" EndLine="417" EndColumn="96" Covered="True" />
+          <Statement FileIndex="24" Line="418" Column="9" EndLine="418" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_TestExceptionExpressionThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+          <Statement FileIndex="24" Line="423" Column="9" EndLine="423" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="424" Column="13" EndLine="424" EndColumn="74" Covered="True" />
+          <Statement FileIndex="24" Line="426" Column="13" EndLine="426" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="428" Column="18" EndLine="428" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="429" Column="13" EndLine="429" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="430" Column="17" EndLine="430" EndColumn="71" Covered="True" />
+          <Statement FileIndex="24" Line="431" Column="13" EndLine="431" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="428" Column="54" EndLine="428" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="428" Column="29" EndLine="428" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="433" Column="13" EndLine="433" EndColumn="133" Covered="True" />
+          <Statement FileIndex="24" Line="434" Column="13" EndLine="434" EndColumn="130" Covered="True" />
+          <Statement FileIndex="24" Line="435" Column="9" EndLine="435" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify_TestExceptionThatMatchesInvocations_DoesNotThrow(System.Int32):System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="24" Line="440" Column="9" EndLine="440" EndColumn="10" Covered="True" />
+          <Statement FileIndex="24" Line="441" Column="13" EndLine="441" EndColumn="74" Covered="True" />
+          <Statement FileIndex="24" Line="443" Column="13" EndLine="443" EndColumn="47" Covered="True" />
+          <Statement FileIndex="24" Line="445" Column="18" EndLine="445" EndColumn="27" Covered="True" />
+          <Statement FileIndex="24" Line="446" Column="13" EndLine="446" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="447" Column="17" EndLine="447" EndColumn="71" Covered="True" />
+          <Statement FileIndex="24" Line="448" Column="13" EndLine="448" EndColumn="14" Covered="True" />
+          <Statement FileIndex="24" Line="445" Column="54" EndLine="445" EndColumn="57" Covered="True" />
+          <Statement FileIndex="24" Line="445" Column="29" EndLine="445" EndColumn="52" Covered="True" />
+          <Statement FileIndex="24" Line="450" Column="13" EndLine="450" EndColumn="94" Covered="True" />
+          <Statement FileIndex="24" Line="451" Column="9" EndLine="451" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Moq.Contrib.ExpressionBuilders.Logging" CoveredStatements="107" TotalStatements="108" CoveragePercent="99">
+    <Namespace Name="Moq.Contrib.ExpressionBuilders.Logging" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+      <Type Name="Log" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+        <Method Name="get_With():Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderPrimaryOperations" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="7" Column="67" EndLine="7" EndColumn="90" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="SetupExtensions" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+        <Method Name="Setup&lt;T&gt;(Moq.Mock&lt;T&gt;,Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilder):Moq.Language.Flow.ISetup&lt;T&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="2" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="11" Column="13" EndLine="11" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="VerifyExtensions" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Method Name="Verify&lt;T&gt;(Moq.Mock&lt;T&gt;,Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilder,Moq.Times):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="26" Column="13" EndLine="26" EndColumn="59" Covered="True" />
+          <Statement FileIndex="3" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify&lt;T&gt;(Moq.Mock&lt;T&gt;,Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilder,System.Func&lt;Moq.Times&gt;):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="21" Column="13" EndLine="21" EndColumn="43" Covered="True" />
+          <Statement FileIndex="3" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify&lt;T&gt;(T,Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilder,Moq.Times):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="16" Column="13" EndLine="16" EndColumn="71" Covered="True" />
+          <Statement FileIndex="3" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Verify&lt;T&gt;(T,Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilder,System.Func&lt;Moq.Times&gt;):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="11" Column="13" EndLine="11" EndColumn="45" Covered="True" />
+          <Statement FileIndex="3" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="Moq.Contrib.ExpressionBuilders.Logging.LogMethod" CoveredStatements="91" TotalStatements="92" CoveragePercent="99">
+      <Type Name="ExpressionBuilder" CoveredStatements="83" TotalStatements="83" CoveragePercent="100">
+        <Type Name="&lt;&gt;c" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass10_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;ExceptionMessage&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="72" Column="48" EndLine="72" EndColumn="82" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass11_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;ExceptionMessage&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="78" Column="48" EndLine="78" EndColumn="68" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass12_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Exception&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="84" Column="48" EndLine="84" EndColumn="67" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass13_0&lt;T&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Exception&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="90" Column="48" EndLine="90" EndColumn="73" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass15_0&lt;T&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Exception&gt;b__0(System.Exception):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="102" Column="48" EndLine="102" EndColumn="64" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass18_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass19_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass20_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass21_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
+        <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;LogLevel&gt;b__0(Microsoft.Extensions.Logging.LogLevel):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="30" Column="47" EndLine="30" EndColumn="60" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass5_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;EventId&gt;b__0(Microsoft.Extensions.Logging.EventId):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="42" Column="46" EndLine="42" EndColumn="58" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass6_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;LogMessage&gt;b__0(System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="48" Column="54" EndLine="48" EndColumn="116" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass7_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;LogMessage&gt;b__0(System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="54" Column="54" EndLine="54" EndColumn="117" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass8_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;LoggedValue&gt;b__0(System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="26" Line="60" Column="54" EndLine="60" EndColumn="96" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".ctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="26" Line="11" Column="9" EndLine="11" EndColumn="75" Covered="True" />
+        </Method>
+        <Method Name="EventId(Microsoft.Extensions.Logging.EventId):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="42" Column="13" EndLine="42" EndColumn="59" Covered="True" />
+          <Statement FileIndex="26" Line="43" Column="13" EndLine="43" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="44" Column="9" EndLine="44" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="EventId(System.Predicate&lt;Microsoft.Extensions.Logging.EventId&gt;):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="36" Column="13" EndLine="36" EndColumn="51" Covered="True" />
+          <Statement FileIndex="26" Line="37" Column="13" EndLine="37" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Exception(System.Exception):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="84" Column="13" EndLine="84" EndColumn="68" Covered="True" />
+          <Statement FileIndex="26" Line="85" Column="13" EndLine="85" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Exception(System.Predicate&lt;System.Exception&gt;):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="95" Column="9" EndLine="95" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="96" Column="13" EndLine="96" EndColumn="53" Covered="True" />
+          <Statement FileIndex="26" Line="97" Column="13" EndLine="97" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="98" Column="9" EndLine="98" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Exception&lt;T&gt;(System.Predicate&lt;T&gt;):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="101" Column="9" EndLine="101" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="102" Column="13" EndLine="102" EndColumn="65" Covered="True" />
+          <Statement FileIndex="26" Line="103" Column="13" EndLine="103" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="104" Column="9" EndLine="104" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Exception&lt;T&gt;(T):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="89" Column="9" EndLine="89" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="90" Column="13" EndLine="90" EndColumn="74" Covered="True" />
+          <Statement FileIndex="26" Line="91" Column="13" EndLine="91" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="92" Column="9" EndLine="92" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ExceptionMessage(System.Predicate&lt;System.String&gt;):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="78" Column="13" EndLine="78" EndColumn="69" Covered="True" />
+          <Statement FileIndex="26" Line="79" Column="13" EndLine="79" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ExceptionMessage(System.String):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="71" Column="9" EndLine="71" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="72" Column="13" EndLine="72" EndColumn="83" Covered="True" />
+          <Statement FileIndex="26" Line="73" Column="13" EndLine="73" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="get_And():Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderPrimaryOperations" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="26" Line="106" Column="59" EndLine="106" EndColumn="63" Covered="True" />
+        </Method>
+        <Method Name="LoggedValue(System.Predicate&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="66" Column="13" EndLine="66" EndColumn="60" Covered="True" />
+          <Statement FileIndex="26" Line="67" Column="13" EndLine="67" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="68" Column="9" EndLine="68" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="LoggedValue(System.String,System.Object):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="59" Column="9" EndLine="59" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="60" Column="13" EndLine="60" EndColumn="98" Covered="True" />
+          <Statement FileIndex="26" Line="61" Column="13" EndLine="61" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="62" Column="9" EndLine="62" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="LogLevel(Microsoft.Extensions.Logging.LogLevel):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="30" Column="13" EndLine="30" EndColumn="61" Covered="True" />
+          <Statement FileIndex="26" Line="31" Column="13" EndLine="31" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="LogLevel(System.Predicate&lt;Microsoft.Extensions.Logging.LogLevel&gt;):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="24" Column="13" EndLine="24" EndColumn="52" Covered="True" />
+          <Statement FileIndex="26" Line="25" Column="13" EndLine="25" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="LogMessage(System.Predicate&lt;System.String&gt;):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="54" Column="13" EndLine="54" EndColumn="119" Covered="True" />
+          <Statement FileIndex="26" Line="55" Column="13" EndLine="55" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="56" Column="9" EndLine="56" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="LogMessage(System.String):Moq.Contrib.ExpressionBuilders.Logging.LogMethod.IExpressionBuilderSecondaryOperations" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="26" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="48" Column="13" EndLine="48" EndColumn="118" Covered="True" />
+          <Statement FileIndex="26" Line="49" Column="13" EndLine="49" EndColumn="25" Covered="True" />
+          <Statement FileIndex="26" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ResolveEventId(System.Predicate&lt;Microsoft.Extensions.Logging.EventId&gt;):Microsoft.Extensions.Logging.EventId" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="26" Line="114" Column="9" EndLine="114" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="115" Column="13" EndLine="115" EndColumn="96" Covered="True" />
+          <Statement FileIndex="26" Line="116" Column="9" EndLine="116" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ResolveException(System.Predicate&lt;System.Exception&gt;):System.Exception" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="26" Line="126" Column="9" EndLine="126" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="127" Column="13" EndLine="127" EndColumn="100" Covered="True" />
+          <Statement FileIndex="26" Line="128" Column="9" EndLine="128" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ResolveLogLevel(System.Predicate&lt;Microsoft.Extensions.Logging.LogLevel&gt;):Microsoft.Extensions.Logging.LogLevel" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="26" Line="109" Column="9" EndLine="109" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="110" Column="13" EndLine="110" EndColumn="98" Covered="True" />
+          <Statement FileIndex="26" Line="111" Column="9" EndLine="111" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ResolveState(System.Collections.Generic.IEnumerable&lt;System.Predicate&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;&gt;):System.Collections.Generic.IReadOnlyList&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="26" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="120" Column="13" EndLine="122" EndColumn="75" Covered="True" />
+          <Statement FileIndex="26" Line="123" Column="9" EndLine="123" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ToExpression&lt;T&gt;():System.Linq.Expressions.Expression&lt;System.Action&lt;T&gt;&gt;" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="26" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="15" Column="13" EndLine="19" EndColumn="71" Covered="True" />
+          <Statement FileIndex="26" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="MatchingOptions" CoveredStatements="8" TotalStatements="9" CoveragePercent="89">
+        <Method Name=".ctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="13" Column="101" EndLine="13" EndColumn="152" Covered="True" />
+        </Method>
+        <Method Name="get_EventIdPredicate():System.Predicate&lt;Microsoft.Extensions.Logging.EventId&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="11" Column="54" EndLine="11" EndColumn="58" Covered="True" />
+        </Method>
+        <Method Name="get_ExceptionPredicate():System.Predicate&lt;System.Exception&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="15" Column="58" EndLine="15" EndColumn="62" Covered="True" />
+        </Method>
+        <Method Name="get_LoggedValuesPredicates():System.Collections.Generic.List&lt;System.Predicate&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="13" Column="87" EndLine="13" EndColumn="91" Covered="True" />
+        </Method>
+        <Method Name="get_LogLevelPredicate():System.Predicate&lt;Microsoft.Extensions.Logging.LogLevel&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="9" Column="56" EndLine="9" EndColumn="60" Covered="True" />
+        </Method>
+        <Method Name="set_EventIdPredicate(System.Predicate&lt;Microsoft.Extensions.Logging.EventId&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="11" Column="59" EndLine="11" EndColumn="63" Covered="True" />
+        </Method>
+        <Method Name="set_ExceptionPredicate(System.Predicate&lt;System.Exception&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="15" Column="63" EndLine="15" EndColumn="67" Covered="True" />
+        </Method>
+        <Method Name="set_LoggedValuesPredicates(System.Collections.Generic.List&lt;System.Predicate&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;&gt;):System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+          <Statement FileIndex="5" Line="13" Column="92" EndLine="13" EndColumn="96" Covered="False" />
+        </Method>
+        <Method Name="set_LogLevelPredicate(System.Predicate&lt;Microsoft.Extensions.Logging.LogLevel&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="9" Column="61" EndLine="9" EndColumn="65" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Testing.Common" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+    <Namespace Name="Testing.Common" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+      <Type Name="Foo" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+        <Method Name=".ctor(Testing.Common.IBar):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="13" Line="5" Column="9" EndLine="5" EndColumn="29" Covered="True" />
+          <Statement FileIndex="13" Line="6" Column="9" EndLine="6" EndColumn="10" Covered="True" />
+          <Statement FileIndex="13" Line="7" Column="13" EndLine="7" EndColumn="23" Covered="True" />
+          <Statement FileIndex="13" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="get_Bar():Testing.Common.IBar" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="13" Line="10" Column="27" EndLine="10" EndColumn="31" Covered="True" />
+        </Method>
+        <Method Name="set_Bar(Testing.Common.IBar):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="13" Line="10" Column="32" EndLine="10" EndColumn="36" Covered="True" />
+        </Method>
+        <Method Name="SomeMethod():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="13" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="13" Line="14" Column="13" EndLine="14" EndColumn="33" Covered="True" />
+          <Statement FileIndex="13" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SomeMethod(System.Int32):System.Int32" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="13" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          <Statement FileIndex="13" Line="19" Column="13" EndLine="19" EndColumn="45" Covered="True" />
+          <Statement FileIndex="13" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>

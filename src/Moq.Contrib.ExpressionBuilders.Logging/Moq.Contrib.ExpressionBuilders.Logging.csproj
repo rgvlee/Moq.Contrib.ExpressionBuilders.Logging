@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Title>Moq.Contrib.ExpressionBuilders.Logging</Title>
+        <Copyright>Copyright (c) 2020 Lee Anderson</Copyright>
+        <PackageProjectUrl>https://github.com/rgvlee/Moq.Contrib.ExpressionBuilders.Logging</PackageProjectUrl>
+        <PackageLicenseUrl></PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/rgvlee/Moq.Contrib.ExpressionBuilders.Logging</RepositoryUrl>
+        <PackageTags>Moq contrib ILogger verify setup logging mock testing</PackageTags>
+        <Authors>rgvlee</Authors>
+        <Description>A fluent expression builder that allows easy verification of ILogger Log* (LogDebug, LogInformation, LogError etc) invocations.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.1.0" />
+      <PackageReference Include="Moq" Version="4.9.0" />
+    </ItemGroup>
+
+</Project>
