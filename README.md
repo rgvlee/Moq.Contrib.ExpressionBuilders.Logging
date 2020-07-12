@@ -4,9 +4,9 @@
 
 ## Overview
 
-If you've done any Moq setup/verification on `ILogger.Log`/`ILogger<T>.Log` invocations you'll know they can be a bit of a pain. From matching multiple predicates to getting the log message to matching on logged values, it gets messy pretty quickly.
+Moq.Contrib.ExpressionBuilders.Logging started out in direct response to my personal pain verifying `ILogger.Log`/`ILogger<T>.Log` invocations. From matching multiple predicates to getting the log message to matching on logged values, the expressions can get long, complex and hard to follow pretty quickly.
 
-The intent of this library is to turn these these complicated expressions into readable statements via a fluent expression builder.
+As the name suggests, this library provides an expression builder that builds clean, readable statements that you can use to setup or verify `ILogger.Log`/`ILogger<T>.Log` invocations.
 
 ## Resources
 
