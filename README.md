@@ -6,11 +6,9 @@ __*A friendly helper for the most popular and friendly mocking framework for .NE
 
 ## Overview
 
-This library provides a fluent expression builder for setting up and verifying Log* invocations on ILogger and ILogger\<T\> Moq mocks.
+If you've done any Moq setup/verification on `ILogger.Log`/`ILogger<T>.Log` invocations you'll know they can be a bit of a pain. From matching multiple predicates to getting the log message to matching on logged values, it gets messy pretty quickly.
 
-If you've done any Moq setup/verification on log* invocations you'll know they can be a bit of a pain. From matching multiple predicates to getting the log message to matching on logged values, it gets messy pretty quickly.
-
-Initially I wrote a couple of Verify extensions at work to do the basics - log level and the log message - then added another to do the logged values and then yet another to do the exception message. It's a bit of a mess now so this seemed like a great opportunity to create an enjoyable experience (I know, I'm weird).
+The intent of this library is to turn these these complicated expressions into readable statements via a fluent expression builder.
 
 ## Resources
 
