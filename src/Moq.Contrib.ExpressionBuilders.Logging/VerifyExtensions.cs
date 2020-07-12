@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.Extensions.Logging;
-using Moq.Contrib.ExpressionBuilders.Logging.LogMethod;
 
 namespace Moq.Contrib.ExpressionBuilders.Logging
 {
@@ -13,7 +12,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
 
         public static void Verify<T>(this T mocked, IExpressionBuilder builder, Times times) where T : class, ILogger
         {
-            Mock.Get(mocked).Verify(builder.ToExpression<T>(), times);
+            Mock.Get(mocked).Verify(builder.Build<T>(), times);
         }
 
         public static void Verify<T>(this Mock<T> mock, IExpressionBuilder builder, Func<Times> times) where T : class, ILogger
@@ -23,7 +22,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
 
         public static void Verify<T>(this Mock<T> mock, IExpressionBuilder builder, Times times) where T : class, ILogger
         {
-            mock.Verify(builder.ToExpression<T>(), times);
+            mock.Verify(builder.Build<T>(), times);
         }
     }
 }

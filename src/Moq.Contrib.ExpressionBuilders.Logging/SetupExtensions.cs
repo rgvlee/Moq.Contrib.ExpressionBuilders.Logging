@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Moq.Contrib.ExpressionBuilders.Logging.LogMethod;
 using Moq.Language.Flow;
 
 namespace Moq.Contrib.ExpressionBuilders.Logging
@@ -8,7 +7,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
     {
         public static ISetup<T> Setup<T>(this Mock<T> mock, IExpressionBuilder builder) where T : class, ILogger
         {
-            return mock.Setup(builder.ToExpression<T>());
+            return mock.Setup(builder.Build<T>());
         }
     }
 }
