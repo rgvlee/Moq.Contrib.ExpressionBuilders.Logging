@@ -2,8 +2,6 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c43470e42c2e41188c1d683e13ed5d3a)](https://www.codacy.com/manual/rgvlee/Moq.Contrib.ExpressionBuilders.Logging?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rgvlee/Moq.Contrib.ExpressionBuilders.Logging&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/c43470e42c2e41188c1d683e13ed5d3a)](https://www.codacy.com/manual/rgvlee/Moq.Contrib.ExpressionBuilders.Logging?utm_source=github.com&utm_medium=referral&utm_content=rgvlee/Moq.Contrib.ExpressionBuilders.Logging&utm_campaign=Badge_Coverage)
 
-__*A friendly helper for the most popular and friendly mocking framework for .NET*__
-
 ## Overview
 
 If you've done any Moq setup/verification on `ILogger.Log`/`ILogger<T>.Log` invocations you'll know they can be a bit of a pain. From matching multiple predicates to getting the log message to matching on logged values, it gets messy pretty quickly.
