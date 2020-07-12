@@ -2,10 +2,10 @@
 using System.Linq.Expressions;
 using Microsoft.Extensions.Logging;
 
-namespace Moq.Contrib.ExpressionBuilders.Logging.LogMethod
+namespace Moq.Contrib.ExpressionBuilders.Logging
 {
     public interface IExpressionBuilder
     {
-        Expression<Action<T>> ToExpression<T>() where T : ILogger;
+        Expression<Action<T>> Build<T>() where T : ILogger;
     }
 }

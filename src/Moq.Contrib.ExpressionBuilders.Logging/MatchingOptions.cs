@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 
-namespace Moq.Contrib.ExpressionBuilders.Logging.LogMethod
+namespace Moq.Contrib.ExpressionBuilders.Logging
 {
     public class MatchingOptions
     {
