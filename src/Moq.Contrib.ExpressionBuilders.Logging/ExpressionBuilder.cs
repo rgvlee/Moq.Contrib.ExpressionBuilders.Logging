@@ -19,6 +19,8 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
                 (Func<object, Exception, string>) It.IsAny<object>());
         }
 
+        public IExpressionBuilderOptions And => this;
+
         public IExpressionBuilderFluentAnd LogLevel(Predicate<LogLevel> predicate)
         {
             _options.LogLevelPredicate = predicate;
@@ -102,8 +104,6 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
             _options.ExceptionPredicate = x => predicate((T) x);
             return this;
         }
-
-        public IExpressionBuilderOptions And => this;
 
         private static LogLevel ResolveLogLevel(Predicate<LogLevel> predicate)
         {
