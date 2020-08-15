@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-// ReSharper disable once CheckNamespace
-namespace rgvlee.Common
+namespace Moq.Contrib.ExpressionBuilders.Logging.Helpers
 {
     /// <summary>
     ///     A helper to perform checks on arguments.
