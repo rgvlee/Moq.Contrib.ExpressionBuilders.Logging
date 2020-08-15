@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.Extensions.Logging;
+using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
+using rgvlee.Common;
 
 namespace Moq.Contrib.ExpressionBuilders.Logging
 {
-    public class ExpressionBuilder : IExpressionBuilder, IExpressionBuilderOptions, IExpressionBuilderFluentAnd
+    public class ExpressionBuilder : IExpressionBuilder, IExpressionBuilderOptions
     {
+        public const string LogMessageLoggedValueKey = "{OriginalFormat}";
+        public const string NullLogMessageValue = "[null]";
         private readonly MatchingOptions _options = new MatchingOptions();
 
         public Expression<Action<T>> Build<T>() where T : ILogger
@@ -21,87 +25,124 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
 
         public IExpressionBuilderOptions And => this;
 
-        public IExpressionBuilderFluentAnd LogLevel(Predicate<LogLevel> predicate)
+        public IExpressionBuilder LogLevel(Predicate<LogLevel> predicate)
         {
-            _options.LogLevelPredicate = predicate;
+            EnsureArgument.IsNotNull(predicate, nameof(predicate));
+
+            _options.LogLevelPredicate = x => predicate(x);
+
             return this;
         }
 
-        public IExpressionBuilderFluentAnd LogLevel(LogLevel logLevel)
+        public IExpressionBuilder EventId(Predicate<EventId> predicate)
+        {
+            EnsureArgument.IsNotNull(predicate, nameof(predicate));
+
+            _options.EventIdPredicate = x => predicate(x);
+
+            return this;
+        }
+
+        public IExpressionBuilder LogMessage(Predicate<string> predicate)
+        {
+            EnsureArgument.IsNotNull(predicate, nameof(predicate));
+
+            _options.LoggedValuesPredicates.Add(x => x.Key == LogMessageLoggedValueKey && predicate((string) x.Value));
+
+            return this;
+        }
+
+        public IExpressionBuilder LoggedValue(Predicate<KeyValuePair<string, object>> predicate)
+        {
+            EnsureArgument.IsNotNull(predicate, nameof(predicate));
+
+            _options.LoggedValuesPredicates.Add(predicate);
+
+            return this;
+        }
+
+        public IExpressionBuilder ExceptionMessage(Predicate<string> predicate)
+        {
+            EnsureArgument.IsNotNull(predicate, nameof(predicate));
+
+            _options.ExceptionPredicate = x => predicate(x.Message);
+
+            return this;
+        }
+
+        public IExpressionBuilder Exception(Predicate<Exception> predicate)
+        {
+            EnsureArgument.IsNotNull(predicate, nameof(predicate));
+
+            _options.ExceptionPredicate = x => predicate(x);
+
+            return this;
+        }
+
+        public IExpressionBuilder Exception<T>(Predicate<T> predicate) where T : Exception
+        {
+            EnsureArgument.IsNotNull(predicate, nameof(predicate));
+
+            _options.ExceptionPredicate = x => predicate((T) x);
+
+            return this;
+        }
+
+        public IExpressionBuilder LogLevel(LogLevel logLevel)
         {
             _options.LogLevelPredicate = x => x == logLevel;
+
             return this;
         }
 
-        public IExpressionBuilderFluentAnd EventId(Predicate<EventId> predicate)
-        {
-            _options.EventIdPredicate = predicate;
-            return this;
-        }
-
-        public IExpressionBuilderFluentAnd EventId(EventId eventId)
+        public IExpressionBuilder EventId(EventId eventId)
         {
             _options.EventIdPredicate = x => x == eventId;
+
             return this;
         }
 
-        public IExpressionBuilderFluentAnd LogMessage(string logMessage)
+        public IExpressionBuilder LogMessage(string logMessage)
         {
-            _options.LoggedValuesPredicates.Add(x => x.Key.Equals("{OriginalFormat}") && x.Value.Equals(logMessage));
+            _options.LoggedValuesPredicates.Add(x => x.Key == LogMessageLoggedValueKey && (string) x.Value == (logMessage ?? NullLogMessageValue));
+
             return this;
         }
 
-        public IExpressionBuilderFluentAnd LogMessage(Predicate<string> predicate)
+        public IExpressionBuilder LoggedValue(string key, object value)
         {
-            _options.LoggedValuesPredicates.Add(x => x.Key.Equals("{OriginalFormat}") && predicate((string) x.Value));
+            _options.LoggedValuesPredicates.Add(x =>
+            {
+                if (x.Value == null || x.Value is string)
+                {
+                    return x.Key == key && x.Value == value;
+                }
+
+                return x.Key == key && x.Value.Equals(value);
+            });
+
             return this;
         }
 
-        public IExpressionBuilderFluentAnd LoggedValue(string key, object value)
+        public IExpressionBuilder ExceptionMessage(string exceptionMessage)
         {
-            _options.LoggedValuesPredicates.Add(x => x.Key.Equals(key) && x.Value.Equals(value));
+            _options.ExceptionPredicate = x => x.Message == exceptionMessage;
+
             return this;
         }
 
-        public IExpressionBuilderFluentAnd LoggedValue(Predicate<KeyValuePair<string, object>> predicate)
+        public IExpressionBuilder Exception<T>(T exception) where T : Exception
         {
-            _options.LoggedValuesPredicates.Add(predicate);
-            return this;
-        }
+            _options.ExceptionPredicate = x =>
+            {
+                if (x == null)
+                {
+                    return x == exception;
+                }
 
-        public IExpressionBuilderFluentAnd ExceptionMessage(string exceptionMessage)
-        {
-            _options.ExceptionPredicate = x => x.Message.Equals(exceptionMessage);
-            return this;
-        }
+                return x.Equals(exception);
+            };
 
-        public IExpressionBuilderFluentAnd ExceptionMessage(Predicate<string> predicate)
-        {
-            _options.ExceptionPredicate = x => predicate(x.Message);
-            return this;
-        }
-
-        public IExpressionBuilderFluentAnd Exception(Exception exception)
-        {
-            _options.ExceptionPredicate = x => x.Equals(exception);
-            return this;
-        }
-
-        public IExpressionBuilderFluentAnd Exception<T>(T exception) where T : Exception
-        {
-            _options.ExceptionPredicate = x => ((T) x).Equals(exception);
-            return this;
-        }
-
-        public IExpressionBuilderFluentAnd Exception(Predicate<Exception> predicate)
-        {
-            _options.ExceptionPredicate = predicate;
-            return this;
-        }
-
-        public IExpressionBuilderFluentAnd Exception<T>(Predicate<T> predicate) where T : Exception
-        {
-            _options.ExceptionPredicate = x => predicate((T) x);
             return this;
         }
 
