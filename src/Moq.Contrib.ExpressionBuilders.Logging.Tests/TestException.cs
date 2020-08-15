@@ -4,7 +4,12 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 {
     public class TestException : Exception
     {
-        public TestException(Guid id, string message = null)
+        public TestException(Guid id)
+        {
+            Id = id;
+        }
+
+        public TestException(Guid id, string message)
         {
             Id = id;
             Message = message;

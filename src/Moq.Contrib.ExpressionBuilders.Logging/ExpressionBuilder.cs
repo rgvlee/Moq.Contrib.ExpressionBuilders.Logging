@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.Extensions.Logging;
+using Moq.Contrib.ExpressionBuilders.Logging.Helpers;
 using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
-using rgvlee.Common;
 
 namespace Moq.Contrib.ExpressionBuilders.Logging
 {
     public class ExpressionBuilder : IExpressionBuilder, IExpressionBuilderOptions
     {
-        public const string LogMessageLoggedValueKey = "{OriginalFormat}";
-        public const string NullLogMessageValue = "[null]";
+        public static readonly string LogMessageLoggedValueKey = "{OriginalFormat}";
+        public static readonly string NullLogMessageValue = "[null]";
+
         private readonly MatchingOptions _options = new MatchingOptions();
 
         public Expression<Action<T>> Build<T>() where T : ILogger
