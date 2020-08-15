@@ -9,7 +9,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
             Id = id;
         }
 
-        public TestException(Guid id, string message = null)
+        public TestException(Guid id, string message)
         {
             Id = id;
             Message = message;
