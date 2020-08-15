@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
 using Moq.Language.Flow;
 
 namespace Moq.Contrib.ExpressionBuilders.Logging

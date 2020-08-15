@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.Logging;
+using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
 
 namespace Moq.Contrib.ExpressionBuilders.Logging
 {

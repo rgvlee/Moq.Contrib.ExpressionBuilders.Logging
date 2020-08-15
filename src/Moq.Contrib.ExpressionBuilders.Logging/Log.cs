@@ -1,4 +1,6 @@
-﻿namespace Moq.Contrib.ExpressionBuilders.Logging
+﻿using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
+
+namespace Moq.Contrib.ExpressionBuilders.Logging
 {
     public static class Log
     {

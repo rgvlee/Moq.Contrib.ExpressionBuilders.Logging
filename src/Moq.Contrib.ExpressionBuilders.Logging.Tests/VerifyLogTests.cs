@@ -419,9 +419,93 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 
         [Test]
         [AutoData]
+        public void Verify_NullException_DoesNotThrow(int numberOfInvocations, string logMessage)
+        {
+            var exception = (Exception) null;
+            var logger = CreateMockedLogger();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(exception, logMessage);
+            }
+
+            logger.Verify(Log.With.LogMessage(logMessage).And.Exception(exception), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
+        public void Verify_NullExceptionMessage_DoesNotThrow(int numberOfInvocations, string logMessage)
+        {
+            var expectedExceptionMessage = (string) null;
+            var exception = new TestException(_fixture.Create<Guid>(), expectedExceptionMessage);
+
+            var logger = CreateMockedLogger();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(exception, logMessage);
+            }
+
+            logger.Verify(Log.With.LogMessage(logMessage).And.ExceptionMessage(expectedExceptionMessage), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
+        public void Verify_NullLoggedValue_DoesNotThrow(int numberOfInvocations)
+        {
+            var key1 = "key1";
+            var value1 = (string) null;
+            var logMessage = $"This is a message with a single null property {{{key1}}}";
+
+            var logger = CreateMockedLogger();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(logMessage, value1);
+            }
+
+            logger.Verify(Log.With.LoggedValue(key1, value1), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
+        public void Verify_NullLogMessage_DoesNotThrow(int numberOfInvocations)
+        {
+            var logMessage = (string) null;
+
+            var logger = CreateMockedLogger();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(logMessage);
+            }
+
+            logger.Verify(Log.With.LogMessage(logMessage), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
+        public void Verify_ObjectLoggedValueThatMatchesInvocations_DoesNotThrow(int numberOfInvocations)
+        {
+            var key1 = "key1";
+            var value1 = _fixture.Create<Foo>();
+            var logMessage = $"This is a message with a single property {{{key1}}}";
+
+            var logger = CreateMockedLogger();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(logMessage, value1);
+            }
+
+            logger.Verify(Log.With.LoggedValue(key1, value1), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
         public void Verify_TestExceptionExpressionThatMatchesInvocations_DoesNotThrow(int numberOfInvocations)
         {
-            var exception = new TestException(_fixture.Create<string>());
+            var exception = _fixture.Create<TestException>();
 
             var logger = CreateMockedLogger();
 
@@ -438,7 +522,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
         [AutoData]
         public void Verify_TestExceptionThatMatchesInvocations_DoesNotThrow(int numberOfInvocations)
         {
-            var exception = new TestException(_fixture.Create<string>());
+            var exception = _fixture.Create<TestException>();
 
             var logger = CreateMockedLogger();
 
