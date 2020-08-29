@@ -1,7 +1,6 @@
 ﻿using AutoFixture.NUnit3;
 using Microsoft.Extensions.Logging;
 using NUnit.Framework;
-using Testing.Common;
 
 // ReSharper disable NUnit.MethodWithParametersAndTestAttribute
 

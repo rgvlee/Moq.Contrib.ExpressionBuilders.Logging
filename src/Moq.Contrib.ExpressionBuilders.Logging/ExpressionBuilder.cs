@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using Moq.Contrib.ExpressionBuilders.Logging.Helpers;
 using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
@@ -10,8 +11,10 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
 {
     public class ExpressionBuilder : IExpressionBuilder, IExpressionBuilderOptions
     {
-        public static readonly string LogMessageLoggedValueKey = "{OriginalFormat}";
-        public static readonly string NullLogMessageValue = "[null]";
+        private const string LogMessageLoggedValueKey = "{OriginalFormat}";
+        private const string NullLogMessageValue = "[null]";
+
+        private static readonly ILogger<ExpressionBuilder> Logger = LoggerHelper.CreateLogger<ExpressionBuilder>();
 
         private readonly MatchingOptions _options = new MatchingOptions();
 
@@ -160,8 +163,40 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
         private static IReadOnlyList<KeyValuePair<string, object>> ResolveState(IEnumerable<Predicate<KeyValuePair<string, object>>> predicates)
         {
             return predicates.Any()
-                ? It.Is<IReadOnlyList<KeyValuePair<string, object>>>(state => predicates.All(predicate => state.Any(keyValuePair => predicate(keyValuePair))))
+                ? It.Is<IReadOnlyList<KeyValuePair<string, object>>>(state => predicates.All(predicate => ResolveLoggedValues(state).Any(keyValuePair => predicate(keyValuePair))))
                 : It.IsAny<IReadOnlyList<KeyValuePair<string, object>>>();
+        }
+
+        private static IReadOnlyList<KeyValuePair<string, object>> ResolveLoggedValues(IReadOnlyList<KeyValuePair<string, object>> state)
+        {
+            Logger.LogTrace("{stateCount}", state.Count.ToString());
+
+            var logMessage = (string) state[state.Count - 1].Value;
+            Logger.LogDebug("Log message: {logMessage}", logMessage);
+
+            var keys = Regex.Matches(logMessage, @"(?<!{){((?:\{{2})*([^{}]*)(?:}{2})*)}(?!})")
+                .Cast<System.Text.RegularExpressions.Match>()
+                .Select(x => x.Groups[2].Value)
+                .ToList();
+            Logger.LogDebug("Keys extracted from the log message: {keys}", string.Join(", ", keys));
+
+            var loggedValues = new List<KeyValuePair<string, object>>();
+            for (var i = 0; i < state.Count; i++)
+            {
+                try
+                {
+                    var kvp = state[i];
+                    Logger.LogTrace("{key}: {value}", kvp.Key, kvp.Value);
+                    loggedValues.Add(kvp);
+                }
+                catch (Exception ex)
+                {
+                    Logger.LogTrace(ex, "Unable to get the item at index {index}", i.ToString());
+                }
+            }
+            Logger.LogDebug("Logged values: {loggedValues}", string.Join(", ", loggedValues));
+
+            return loggedValues;
         }
 
         private static Exception ResolveException(Predicate<Exception> predicate)

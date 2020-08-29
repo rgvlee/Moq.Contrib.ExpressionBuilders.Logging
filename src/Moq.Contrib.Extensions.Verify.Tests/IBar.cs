@@ -1,4 +1,4 @@
-﻿namespace Testing.Common
+﻿namespace Moq.Contrib.Extensions.Verify.Tests
 {
     public interface IBar
     {

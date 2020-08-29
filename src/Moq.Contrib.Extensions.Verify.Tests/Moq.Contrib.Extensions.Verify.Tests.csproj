@@ -9,14 +9,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoFixture.NUnit3" Version="4.13.0" />
         <PackageReference Include="nunit" Version="3.12.0" />
-        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Moq.Contrib.Extensions.Verify\Moq.Contrib.Extensions.Verify.csproj" />
-      <ProjectReference Include="..\Testing.Common\Testing.Common.csproj" />
     </ItemGroup>
 
 </Project>
