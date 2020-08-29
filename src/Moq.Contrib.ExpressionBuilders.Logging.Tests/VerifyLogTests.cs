@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using AutoFixture;
 using AutoFixture.NUnit3;
@@ -405,21 +404,6 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 
         [Test]
         [AutoData]
-        public void Verify_ParamsArrayWithNullItem_DoesNotThrow(int numberOfInvocations)
-        {
-            var key1 = _fixture.Create<string>();
-            var logMessage = $"This is a message with a single property {{{key1}}}";
-
-            for (var i = 0; i < numberOfInvocations; i++)
-            {
-                logger.LogError(logMessage, new object[] { null });
-            }
-
-            logger.Verify(Log.With.LoggedValue(key1, null), Times.Exactly(numberOfInvocations));
-        }
-
-        [Test]
-        [AutoData]
         public void Verify_NullLogMessage_DoesNotThrow(int numberOfInvocations)
         {
             for (var i = 0; i < numberOfInvocations; i++)
@@ -444,6 +428,38 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
             }
 
             logger.Verify(Log.With.LoggedValue(key1, value1), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
+        public void Verify_ParamsArrayWithNullItem_DoesNotThrow(int numberOfInvocations)
+        {
+            var key1 = _fixture.Create<string>();
+            var logMessage = $"This is a message with a single property {{{key1}}}";
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(logMessage, new object[] { null });
+            }
+
+            logger.Verify(Log.With.LoggedValue(key1, null), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
+        public void Verify_ParamsArrayWithNullItemAndStringItem_DoesNotThrow(int numberOfInvocations)
+        {
+            var key1 = _fixture.Create<string>();
+            var key2 = _fixture.Create<string>();
+            var logMessage = $"This is a message with multiple properties {{{key1}}} {{{key2}}}";
+            var stringLoggedValue = _fixture.Create<string>();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(logMessage, null, stringLoggedValue);
+            }
+
+            logger.Verify(Log.With.LoggedValue(key1, null).And.LoggedValue(key2, stringLoggedValue), Times.Exactly(numberOfInvocations));
         }
 
         [Test]
@@ -489,23 +505,6 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
             }
 
             logger.Verify(Log.With.Exception(exception), Times.Exactly(numberOfInvocations));
-        }
-
-        [Test]
-        [AutoData]
-        public void Verify_ParamsArrayWithNullItemAndStringItem_DoesNotThrow(int numberOfInvocations)
-        {
-            var key1 = _fixture.Create<string>();
-            var key2 = _fixture.Create<string>();
-            var logMessage = $"This is a message with multiple properties {{{key1}}} {{{key2}}}";
-            var stringLoggedValue = _fixture.Create<string>();
-
-            for (var i = 0; i < numberOfInvocations; i++)
-            {
-                logger.LogError(logMessage, null, stringLoggedValue);
-            }
-
-            logger.Verify(Log.With.LoggedValue(key1, null).And.LoggedValue(key2, stringLoggedValue), Times.Exactly(numberOfInvocations));
         }
     }
 }

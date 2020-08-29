@@ -194,6 +194,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
                     Logger.LogTrace(ex, "Unable to get the item at index {index}", i.ToString());
                 }
             }
+
             Logger.LogDebug("Logged values: {loggedValues}", string.Join(", ", loggedValues));
 
             return loggedValues;
