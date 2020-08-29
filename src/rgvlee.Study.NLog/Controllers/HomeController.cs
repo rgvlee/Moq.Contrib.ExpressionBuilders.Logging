@@ -16,10 +16,12 @@ namespace rgvlee.Study.NLog.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _logger.LogDebug(1, "NLog injected into HomeController");
         }
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Hello, this is the index!");
             return View();
         }
 
