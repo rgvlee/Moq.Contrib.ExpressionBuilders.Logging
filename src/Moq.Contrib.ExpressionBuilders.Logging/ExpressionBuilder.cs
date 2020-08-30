@@ -117,12 +117,36 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
         {
             _options.LoggedValuesPredicates.Add(x =>
             {
-                if (x.Value == null || x.Value is string)
+                Logger.LogTrace("Logged value: {key}: {value}", x.Key, x.Value);
+                if (value != null)
                 {
-                    return x.Key == key && x.Value == value;
+                    Logger.LogTrace("Expected logged value: {key}: {value} ({type})", key, value, value.GetType().Name);
+                }
+                else
+                {
+                    Logger.LogTrace("Expected logged value: {key}: {value}", key, value);
                 }
 
-                return x.Key == key && x.Value.Equals(value);
+                if (x.Key != key)
+                {
+                    Logger.LogTrace("Key does not match; {left}, {right}", x.Key, key);
+                    return false;
+                }
+
+                if (x.Value == null)
+                {
+                    Logger.LogTrace("value == null: {result}", value == null);
+                    return value == null;
+                }
+
+                if (value is string stringValue)
+                {
+                    Logger.LogTrace("x.Value == stringValue: {result}", x.Value == stringValue);
+                    return (string) x.Value == stringValue;
+                }
+
+                Logger.LogTrace("x.Value.Equals(value): {result}", x.Value.Equals(value));
+                return x.Value.Equals(value);
             });
 
             return this;
@@ -141,7 +165,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
             {
                 if (x == null)
                 {
-                    return x == exception;
+                    return exception == null;
                 }
 
                 return x.Equals(exception);
