@@ -17,11 +17,11 @@ As the name suggests, this library provides an expression builder that builds cl
 
 ### Verify
 
-Start with `Log.With` and build the expression that matches your expectation. The following will verify that you logged error 666 "I am a meat popsicle". 
+Start with `Log.With` and build the expression that matches your expectation. The following will verify that you logged error 666 "I am a meat popsicle":
 
 ```c#
 logger.Verify(Log.With.LogLevel(LogLevel.Error).And.EventId(666).And.LogMessage("I am a meat popsicle"), Times.Once);
-``` 
+```
 
 Options that are not specified are defaulted to It.IsAny\<\>; you could simply verify that you've logged n number of errors:
 
@@ -38,7 +38,7 @@ logger.Verify(Log.With.LogLevel(x => x == LogLevel.Error || x == LogLevel.Critic
     Times.Once);
 ```
 
-You can invoke Verify on the Mock\<ILogger\>/Mock\<ILogger\<T\>\> or the mocked object itself.
+You can invoke Verify on the Mock\<ILogger\>/Mock\<ILogger\<T\>\> or the mocked object itself:
 
 ```c#
 var loggerMock = new Mock<ILogger<IFoo>>();
@@ -51,13 +51,11 @@ loggerMock.Verify(Log.With.LogLevel(LogLevel.Error).And.EventId(666).And.LogMess
 logger.Verify(Log.With.LogLevel(LogLevel.Error).And.EventId(666).And.LogMessage("I am a meat popsicle"), Times.Once);
 ```
 
-#### Matching on native types
-
-All of the available expression builder options offer native type (e.g., LogLevel, EventId, string for the log message) and predicate overloads. The native type overloads resolve to x.Equals(y). If you are providing a reference type to the native type overloads for the LoggedValues and Exception options you will need to provide an implementation of x.Equals(y) for the equality condition to pass (see [`IEquatable<T>`](<https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=netcore-3.1>) and/or [Fody.Equals](https://github.com/Fody/Equals)).  
+String equality (e.g., log message, logged values) is resolved using x == y. For everything else, equality is resolved using x.Equals(y). If you are providing a reference type to the LoggedValues or Exception options you will need to provide an implementation of x.Equals(y) for the equality condition to pass (see [`IEquatable<T>`](<https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=netcore-3.1>) and/or [Fody.Equals](https://github.com/Fody/Equals)).
 
 #### Exception and exception message matching
 
-The following verifies that I had one log invocation where the exception message was equal to `exceptionMessage`.
+The following verifies that I had one log invocation where the exception message was equal to `exceptionMessage`:
 
 ```c#
 var exceptionMessage = _fixture.Create<string>();
@@ -69,7 +67,7 @@ logger.LogError(666, exception, "I am a meat popsicle");
 logger.Verify(Log.With.ExceptionMessage(exceptionMessage), Times.Once);
 ```
 
-If you need to match on a condition other than equality (e.g., message contains x, message starts with y, message contains x and starts with y) use the predicate overload.
+If you want to match on another condition (e.g., message contains x, message starts with y, message contains x and starts with y), use the predicate overload:
 
 ```c#
 var exceptionMessage = "Wow that escalated quickly";
@@ -83,7 +81,7 @@ logger.LogError(666, exception, "I am a meat popsicle");
 logger.Verify(Log.With.ExceptionMessage(x => x.StartsWith(firstWord) && x.Contains(thirdWord)), Times.Once);
 ```
 
-If you want to match on another property (e.g., InnerException.Message), use the Exception predicate overload.
+If you want to match on another property (e.g., InnerException.Message), use the Exception predicate overload:
 
 ```c#
 var innerExceptionMessage = _fixture.Create<string>();
@@ -99,7 +97,7 @@ logger.Verify(Log.With.Exception(x => x.Message.Equals(exceptionMessage) && x.In
 
 ## Setup and Verifiable
 
-The result of the expression builder is an expression so you can use it to build the mock setup expression as well.
+As the expression builder builds an expression, you can use it to build the mock setup expression as well.
 
 Verifying a verifiable setup with a custom callback:
 
@@ -137,7 +135,7 @@ Mock.VerifyAll(loggerMock);
 
 ## Chaining behaviour
 
-If you decide for some reason to specify an option more than once, only the last option will be included in the expression. The following will verify that you logged one critical error; the error log level option is ignored. 
+Options can only be specified once. The following will ignore the LogLevel.Error option:
 
 ```c#
 logger.Verify(Log.With.LogLevel(LogLevel.Error).And.LogLevel(LogLevel.Critical), Times.Once);
