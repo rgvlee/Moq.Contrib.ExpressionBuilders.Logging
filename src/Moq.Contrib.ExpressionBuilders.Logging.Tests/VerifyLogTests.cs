@@ -432,6 +432,24 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 
         [Test]
         [AutoData]
+        public void VerifyLoggedValue_NullParamsArray_Throws(int numberOfInvocations)
+        {
+            var key1 = _fixture.Create<string>();
+            var logMessage = $"This is a message with a single property {{{key1}}}";
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(logMessage, null);
+            }
+
+            Assert.Throws<MockException>(() =>
+            {
+                logger.Verify(Log.With.LoggedValue(key1, null), Times.Exactly(numberOfInvocations));
+            });
+        }
+
+        [Test]
+        [AutoData]
         public void Verify_ParamsArrayWithNullItem_DoesNotThrow(int numberOfInvocations)
         {
             var key1 = _fixture.Create<string>();

@@ -192,6 +192,13 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
                 catch (Exception ex)
                 {
                     Logger.LogTrace(ex, "Unable to get the item at index {index}", i.ToString());
+                    if (state.Count <= 2)
+                    {
+                        continue;
+                    }
+
+                    Logger.LogTrace(ex, "Manually adding null logged value", i.ToString());
+                    loggedValues.Add(new KeyValuePair<string, object>(keys[i], null));
                 }
             }
 
