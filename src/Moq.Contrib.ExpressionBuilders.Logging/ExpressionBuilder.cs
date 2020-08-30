@@ -141,7 +141,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
 
                 if (value is string stringValue)
                 {
-                    Logger.LogTrace("x.Value == stringValue: {result}", x.Value == stringValue);
+                    Logger.LogTrace("x.Value == stringValue: {result}", (string) x.Value == stringValue);
                     return (string) x.Value == stringValue;
                 }
 
