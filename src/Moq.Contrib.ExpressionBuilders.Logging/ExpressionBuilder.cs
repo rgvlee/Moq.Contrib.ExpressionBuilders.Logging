@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using Moq.Contrib.ExpressionBuilders.Logging.Helpers;
 using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
@@ -10,8 +11,10 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
 {
     public class ExpressionBuilder : IExpressionBuilder, IExpressionBuilderOptions
     {
-        public static readonly string LogMessageLoggedValueKey = "{OriginalFormat}";
-        public static readonly string NullLogMessageValue = "[null]";
+        private const string LogMessageLoggedValueKey = "{OriginalFormat}";
+        private const string NullLogMessageValue = "[null]";
+
+        private static readonly ILogger<ExpressionBuilder> Logger = LoggerHelper.CreateLogger<ExpressionBuilder>();
 
         private readonly MatchingOptions _options = new MatchingOptions();
 
@@ -114,12 +117,36 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
         {
             _options.LoggedValuesPredicates.Add(x =>
             {
-                if (x.Value == null || x.Value is string)
+                Logger.LogTrace("Logged value: {key}: {value}", x.Key, x.Value);
+                if (value != null)
                 {
-                    return x.Key == key && x.Value == value;
+                    Logger.LogTrace("Expected logged value: {key}: {value} ({type})", key, value, value.GetType().Name);
+                }
+                else
+                {
+                    Logger.LogTrace("Expected logged value: {key}: {value}", key, value);
                 }
 
-                return x.Key == key && x.Value.Equals(value);
+                if (x.Key != key)
+                {
+                    Logger.LogTrace("Key does not match; {left}, {right}", x.Key, key);
+                    return false;
+                }
+
+                if (x.Value == null)
+                {
+                    Logger.LogTrace("value == null: {result}", value == null);
+                    return value == null;
+                }
+
+                if (value is string stringValue)
+                {
+                    Logger.LogTrace("x.Value == stringValue: {result}", (string) x.Value == stringValue);
+                    return (string) x.Value == stringValue;
+                }
+
+                Logger.LogTrace("x.Value.Equals(value): {result}", x.Value.Equals(value));
+                return x.Value.Equals(value);
             });
 
             return this;
@@ -138,7 +165,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
             {
                 if (x == null)
                 {
-                    return x == exception;
+                    return exception == null;
                 }
 
                 return x.Equals(exception);
@@ -160,8 +187,48 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
         private static IReadOnlyList<KeyValuePair<string, object>> ResolveState(IEnumerable<Predicate<KeyValuePair<string, object>>> predicates)
         {
             return predicates.Any()
-                ? It.Is<IReadOnlyList<KeyValuePair<string, object>>>(state => predicates.All(predicate => state.Any(keyValuePair => predicate(keyValuePair))))
+                ? It.Is<IReadOnlyList<KeyValuePair<string, object>>>(state => predicates.All(predicate => ResolveLoggedValues(state).Any(keyValuePair => predicate(keyValuePair))))
                 : It.IsAny<IReadOnlyList<KeyValuePair<string, object>>>();
+        }
+
+        private static IReadOnlyList<KeyValuePair<string, object>> ResolveLoggedValues(IReadOnlyList<KeyValuePair<string, object>> state)
+        {
+            Logger.LogTrace("{stateCount}", state.Count.ToString());
+
+            var logMessage = (string) state[state.Count - 1].Value;
+            Logger.LogDebug("Log message: {logMessage}", logMessage);
+
+            var keys = Regex.Matches(logMessage, @"(?<!{){((?:\{{2})*([^{}]*)(?:}{2})*)}(?!})")
+                .Cast<System.Text.RegularExpressions.Match>()
+                .Select(x => x.Groups[2].Value)
+                .ToList();
+            Logger.LogDebug("Keys extracted from the log message: {keys}", string.Join(", ", keys));
+
+            var loggedValues = new List<KeyValuePair<string, object>>();
+            for (var i = 0; i < state.Count; i++)
+            {
+                try
+                {
+                    var kvp = state[i];
+                    Logger.LogTrace("{key}: {value}", kvp.Key, kvp.Value);
+                    loggedValues.Add(kvp);
+                }
+                catch (Exception ex)
+                {
+                    Logger.LogTrace(ex, "Unable to get the item at index {index}", i.ToString());
+                    if (state.Count <= 2)
+                    {
+                        continue;
+                    }
+
+                    Logger.LogTrace(ex, "Manually adding null logged value", i.ToString());
+                    loggedValues.Add(new KeyValuePair<string, object>(keys[i], null));
+                }
+            }
+
+            Logger.LogDebug("Logged values: {loggedValues}", string.Join(", ", loggedValues));
+
+            return loggedValues;
         }
 
         private static Exception ResolveException(Predicate<Exception> predicate)
