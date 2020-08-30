@@ -432,6 +432,35 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 
         [Test]
         [AutoData]
+        public void Verify_TestExceptionExpressionThatMatchesInvocations_DoesNotThrow(int numberOfInvocations)
+        {
+            var exception = _fixture.Create<TestException>();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(exception, _fixture.Create<string>());
+            }
+
+            logger.Verify(Log.With.Exception(x => ((TestException) x).Id.Equals(exception.Id)), Times.Exactly(numberOfInvocations));
+            logger.Verify(Log.With.Exception<TestException>(x => x.Id.Equals(exception.Id)), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
+        public void Verify_TestExceptionThatMatchesInvocations_DoesNotThrow(int numberOfInvocations)
+        {
+            var exception = _fixture.Create<TestException>();
+
+            for (var i = 0; i < numberOfInvocations; i++)
+            {
+                logger.LogError(exception, _fixture.Create<string>());
+            }
+
+            logger.Verify(Log.With.Exception(exception), Times.Exactly(numberOfInvocations));
+        }
+
+        [Test]
+        [AutoData]
         public void VerifyLoggedValue_NullParamsArray_Throws(int numberOfInvocations)
         {
             var key1 = _fixture.Create<string>();
@@ -494,35 +523,6 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
             }
 
             logger.Verify(Log.With.LoggedValue(key1, null).And.LoggedValue(key2, null), Times.Exactly(numberOfInvocations));
-        }
-
-        [Test]
-        [AutoData]
-        public void Verify_TestExceptionExpressionThatMatchesInvocations_DoesNotThrow(int numberOfInvocations)
-        {
-            var exception = _fixture.Create<TestException>();
-
-            for (var i = 0; i < numberOfInvocations; i++)
-            {
-                logger.LogError(exception, _fixture.Create<string>());
-            }
-
-            logger.Verify(Log.With.Exception(x => ((TestException) x).Id.Equals(exception.Id)), Times.Exactly(numberOfInvocations));
-            logger.Verify(Log.With.Exception<TestException>(x => x.Id.Equals(exception.Id)), Times.Exactly(numberOfInvocations));
-        }
-
-        [Test]
-        [AutoData]
-        public void Verify_TestExceptionThatMatchesInvocations_DoesNotThrow(int numberOfInvocations)
-        {
-            var exception = _fixture.Create<TestException>();
-
-            for (var i = 0; i < numberOfInvocations; i++)
-            {
-                logger.LogError(exception, _fixture.Create<string>());
-            }
-
-            logger.Verify(Log.With.Exception(exception), Times.Exactly(numberOfInvocations));
         }
     }
 }
