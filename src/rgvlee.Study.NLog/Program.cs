@@ -1,9 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog.Web;
@@ -17,24 +13,23 @@ namespace rgvlee.Study.NLog
             var logger = global::NLog.Web.NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
             try
             {
-                logger.Debug("init main");
+                logger.Debug("Starting web host");
                 CreateHostBuilder(args).Build().Run();
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
-                //NLog: catch setup errors
-                logger.Error(exception, "Stopped program because of exception");
+                logger.Error(ex, "Host terminated unexpectedly");
                 throw;
             }
             finally
             {
-                // Ensure to flush and stop internal timers/threads before application-exit (Avoid segmentation fault on Linux)
                 global::NLog.LogManager.Shutdown();
             }
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            return Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
@@ -42,8 +37,9 @@ namespace rgvlee.Study.NLog
                 .ConfigureLogging(logging =>
                 {
                     logging.ClearProviders();
-                    logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+                    logging.SetMinimumLevel(LogLevel.Trace);
                 })
-                .UseNLog();  // NLog: Setup NLog for Dependency injection
+                .UseNLog();
+        }
     }
 }

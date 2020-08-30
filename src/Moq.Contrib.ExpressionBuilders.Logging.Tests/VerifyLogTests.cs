@@ -450,7 +450,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 
         [Test]
         [AutoData]
-        public void Verify_ParamsArrayWithNullItem_DoesNotThrow(int numberOfInvocations)
+        public void VerifyLoggedValue_ParamsArrayWithNullItem_DoesNotThrow(int numberOfInvocations)
         {
             var key1 = _fixture.Create<string>();
             var logMessage = $"This is a message with a single property {{{key1}}}";
@@ -465,7 +465,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 
         [Test]
         [AutoData]
-        public void Verify_ParamsArrayWithNullItemAndStringItem_DoesNotThrow(int numberOfInvocations)
+        public void VerifyLoggedValue_ParamsArrayWithNullItemAndStringItem_DoesNotThrow(int numberOfInvocations)
         {
             var key1 = _fixture.Create<string>();
             var key2 = _fixture.Create<string>();
@@ -482,7 +482,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
 
         [Test]
         [AutoData]
-        public void Verify_ParamsArrayWithTwoNullItems_DoesNotThrow(int numberOfInvocations)
+        public void VerifyLoggedValue_ParamsArrayWithTwoNullItems_DoesNotThrow(int numberOfInvocations)
         {
             var key1 = _fixture.Create<string>();
             var key2 = _fixture.Create<string>();

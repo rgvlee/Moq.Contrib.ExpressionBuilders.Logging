@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using rgvlee.Study.NLog.Models;
@@ -16,13 +13,13 @@ namespace rgvlee.Study.NLog.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _logger.LogDebug(1, "NLog injected into HomeController");
+            _logger.LogDebug(1, "Logger injected into HomeController");
         }
 
         public IActionResult Index()
         {
             _logger.LogInformation("Hello, this is the index!");
-            
+
             try
             {
                 _logger.LogInformation("Placeholder with no value {key1}");
@@ -48,6 +45,15 @@ namespace rgvlee.Study.NLog.Controllers
             catch (Exception ex)
             {
                 _logger.LogError("Null params failed", ex);
+            }
+
+            try
+            {
+                _logger.LogInformation("Params with null item {key1}", new object[] {null});
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Params with null item failed", ex);
             }
 
             try
