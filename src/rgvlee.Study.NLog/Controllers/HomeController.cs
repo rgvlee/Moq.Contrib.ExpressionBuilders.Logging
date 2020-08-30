@@ -49,7 +49,16 @@ namespace rgvlee.Study.NLog.Controllers
 
             try
             {
-                _logger.LogInformation("Params with null item {key1}", new object[] {null});
+                _logger.LogInformation("Null string {key1}", (string) null);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Null string failed", ex);
+            }
+
+            try
+            {
+                _logger.LogInformation("Params with null item {key1}", new object[] { null });
             }
             catch (Exception ex)
             {
