@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefaultBehaviour", "Default
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rgvlee.Study.NLog", "rgvlee.Study.NLog\rgvlee.Study.NLog.csproj", "{CCA0EAA2-90E1-4A3E-9886-DBC1312EC11D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rgvlee.Study.Serilog", "rgvlee.Study.Serilog\rgvlee.Study.Serilog.csproj", "{AA32E277-867F-4D74-A274-73F3E07A00D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,8 +50,13 @@ Global
 		{CCA0EAA2-90E1-4A3E-9886-DBC1312EC11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCA0EAA2-90E1-4A3E-9886-DBC1312EC11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCA0EAA2-90E1-4A3E-9886-DBC1312EC11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA32E277-867F-4D74-A274-73F3E07A00D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA32E277-867F-4D74-A274-73F3E07A00D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA32E277-867F-4D74-A274-73F3E07A00D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA32E277-867F-4D74-A274-73F3E07A00D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CCA0EAA2-90E1-4A3E-9886-DBC1312EC11D} = {1E3D00CE-2565-4B01-878A-016E3D962606}
+		{AA32E277-867F-4D74-A274-73F3E07A00D4} = {1E3D00CE-2565-4B01-878A-016E3D962606}
 	EndGlobalSection
 EndGlobal
