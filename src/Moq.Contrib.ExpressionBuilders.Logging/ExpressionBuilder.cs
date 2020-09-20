@@ -4,8 +4,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
-using Moq.Contrib.ExpressionBuilders.Logging.Helpers;
 using Moq.Contrib.ExpressionBuilders.Logging.Interfaces;
+using rgvlee.Core.Common.Helpers;
 
 namespace Moq.Contrib.ExpressionBuilders.Logging
 {
@@ -14,7 +14,7 @@ namespace Moq.Contrib.ExpressionBuilders.Logging
         private const string LogMessageLoggedValueKey = "{OriginalFormat}";
         private const string NullLogMessageValue = "[null]";
 
-        private static readonly ILogger<ExpressionBuilder> Logger = LoggerHelper.CreateLogger<ExpressionBuilder>();
+        private static readonly ILogger<ExpressionBuilder> Logger = LoggingHelper.CreateLogger<ExpressionBuilder>();
 
         private readonly MatchingOptions _options = new MatchingOptions();
 
