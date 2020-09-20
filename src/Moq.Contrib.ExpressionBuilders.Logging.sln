@@ -1,9 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moq.Contrib.Extensions.Verify", "Moq.Contrib.Extensions.Verify\Moq.Contrib.Extensions.Verify.csproj", "{35450075-13D9-4DBD-9E74-514221FED6C7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moq.Contrib.Extensions.Verify.Tests", "Moq.Contrib.Extensions.Verify.Tests\Moq.Contrib.Extensions.Verify.Tests.csproj", "{76537C39-BCD5-4853-9914-8FA705F47524}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moq.Contrib.ExpressionBuilders.Logging", "Moq.Contrib.ExpressionBuilders.Logging\Moq.Contrib.ExpressionBuilders.Logging.csproj", "{0C0E99EB-BE36-4180-BA75-12D21048C305}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moq.Contrib.ExpressionBuilders.Logging.Tests", "Moq.Contrib.ExpressionBuilders.Logging.Tests\Moq.Contrib.ExpressionBuilders.Logging.Tests.csproj", "{6666E6ED-5750-4B20-B070-0D443A06F55A}"
@@ -16,6 +12,8 @@ ProjectSection(SolutionItems) = preProject
 	..\README.md = ..\README.md
 	..\Moq.Contrib.ExpressionBuilders.Logging.nuspec = ..\Moq.Contrib.ExpressionBuilders.Logging.nuspec
 	..\TODO.md = ..\TODO.md
+	..\dotcover.xml = ..\dotcover.xml
+	..\Moq.Contrib.ExpressionBuilders.Logging.dcvr = ..\Moq.Contrib.ExpressionBuilders.Logging.dcvr
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefaultBehaviour", "DefaultBehaviour", "{1E3D00CE-2565-4B01-878A-016E3D962606}"
@@ -24,20 +22,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rgvlee.Study.NLog", "rgvlee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rgvlee.Study.Serilog", "rgvlee.Study.Serilog\rgvlee.Study.Serilog.csproj", "{AA32E277-867F-4D74-A274-73F3E07A00D4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EE62A759-BB7F-47BF-878E-FC44EE8F2182}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{35450075-13D9-4DBD-9E74-514221FED6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35450075-13D9-4DBD-9E74-514221FED6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35450075-13D9-4DBD-9E74-514221FED6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35450075-13D9-4DBD-9E74-514221FED6C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76537C39-BCD5-4853-9914-8FA705F47524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76537C39-BCD5-4853-9914-8FA705F47524}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76537C39-BCD5-4853-9914-8FA705F47524}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76537C39-BCD5-4853-9914-8FA705F47524}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0C0E99EB-BE36-4180-BA75-12D21048C305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0C0E99EB-BE36-4180-BA75-12D21048C305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C0E99EB-BE36-4180-BA75-12D21048C305}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -58,5 +50,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CCA0EAA2-90E1-4A3E-9886-DBC1312EC11D} = {1E3D00CE-2565-4B01-878A-016E3D962606}
 		{AA32E277-867F-4D74-A274-73F3E07A00D4} = {1E3D00CE-2565-4B01-878A-016E3D962606}
+		{6666E6ED-5750-4B20-B070-0D443A06F55A} = {EE62A759-BB7F-47BF-878E-FC44EE8F2182}
 	EndGlobalSection
 EndGlobal

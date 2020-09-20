@@ -10,7 +10,7 @@ As the name suggests, this library provides an expression builder that builds cl
 
 ## Resources
 
--   [Source repository](https://github.com/rgvlee/Moq.Contrib.ExpressionBuilders.Logging/)
+-   [Source repository](https://github.com/rgvlee/Moq.Contrib.ExpressionBuilders.Logging)
 -   [Moq.Contrib.ExpressionBuilders.Logging - NuGet](https://www.nuget.org/packages/Moq.Contrib.ExpressionBuilders.Logging/)
 
 ## Usage

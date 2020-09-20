@@ -3,8 +3,8 @@ using System.Linq;
 using AutoFixture;
 using AutoFixture.NUnit3;
 using Microsoft.Extensions.Logging;
-using Moq.Contrib.ExpressionBuilders.Logging.Helpers;
 using NUnit.Framework;
+using rgvlee.Core.Common.Helpers;
 
 // ReSharper disable NUnit.MethodWithParametersAndTestAttribute
 
@@ -17,8 +17,8 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
         [SetUp]
         public void SetUp()
         {
-            LoggerHelper.LoggerFactory.AddConsole(LogLevel.Trace);
-            //LoggerHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Trace));
+            LoggingHelper.LoggerFactory.AddConsole(LogLevel.Trace);
+            //LoggingHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Trace));
             _fixture = new Fixture();
 
             logger = CreateMockedLogger();
