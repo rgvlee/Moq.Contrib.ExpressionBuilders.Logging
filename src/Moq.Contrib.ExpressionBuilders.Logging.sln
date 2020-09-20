@@ -12,6 +12,8 @@ ProjectSection(SolutionItems) = preProject
 	..\README.md = ..\README.md
 	..\Moq.Contrib.ExpressionBuilders.Logging.nuspec = ..\Moq.Contrib.ExpressionBuilders.Logging.nuspec
 	..\TODO.md = ..\TODO.md
+	..\dotcover.xml = ..\dotcover.xml
+	..\Moq.Contrib.ExpressionBuilders.Logging.dcvr = ..\Moq.Contrib.ExpressionBuilders.Logging.dcvr
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefaultBehaviour", "DefaultBehaviour", "{1E3D00CE-2565-4B01-878A-016E3D962606}"
