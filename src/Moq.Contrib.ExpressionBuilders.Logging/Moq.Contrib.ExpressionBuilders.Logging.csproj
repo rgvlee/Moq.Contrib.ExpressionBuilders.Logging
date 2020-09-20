@@ -2,15 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageVersion>1.0.0</PackageVersion>
-        <Title></Title>
-        <Copyright></Copyright>
-        <PackageProjectUrl></PackageProjectUrl>
-        <PackageLicenseUrl></PackageLicenseUrl>
-        <RepositoryUrl></RepositoryUrl>
-        <PackageTags></PackageTags>
         <Authors>rgvlee</Authors>
-        <Description></Description>
     </PropertyGroup>
 
     <ItemGroup>
