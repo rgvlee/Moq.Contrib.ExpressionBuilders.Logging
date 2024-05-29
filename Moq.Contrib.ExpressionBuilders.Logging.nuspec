@@ -15,7 +15,7 @@
     <dependencies>
       <group targetFramework=".NETStandard2.0">
         <dependency id="Microsoft.Extensions.Logging" version="2.1.0" exclude="Build,Analyzers" />
-        <dependency id="Moq" version="4.11.0" exclude="Build,Analyzers" />
+        <dependency id="Moq" version="4.18.0" exclude="Build,Analyzers" />
         <dependency id="rgvlee.Core" version="1.2.1" exclude="Build,Analyzers" />
       </group>
     </dependencies>
