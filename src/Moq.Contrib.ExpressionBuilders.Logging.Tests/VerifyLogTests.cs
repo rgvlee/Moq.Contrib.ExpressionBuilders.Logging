@@ -17,8 +17,8 @@ namespace Moq.Contrib.ExpressionBuilders.Logging.Tests
         [SetUp]
         public void SetUp()
         {
-            LoggingHelper.LoggerFactory.AddConsole(LogLevel.Trace);
-            //LoggingHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Trace));
+            // LoggingHelper.LoggerFactory.AddConsole(LogLevel.Trace);
+            LoggingHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Trace));
             _fixture = new Fixture();
 
             logger = CreateMockedLogger();
